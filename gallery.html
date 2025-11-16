@@ -2680,6 +2680,18 @@
   <div class="page-container">
     <h1 class="page-title">黃庭筠照片集</h1>
     <p class="page-subtitle">世新大學傳播系美照 | 高清寫真圖片</p>
+    
+    <!-- AddToAny 分享按鈕 -->
+    <div class="a2a_kit a2a_kit_size_32 a2a_default_style" style="text-align: center; margin: 20px 0; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 10px; backdrop-filter: blur(10px);">
+      <span style="color: #fff; margin-right: 10px; font-weight: 500;">📤 分享此頁:</span>
+      <a class="a2a_button_facebook"></a>
+      <a class="a2a_button_twitter"></a>
+      <a class="a2a_button_line"></a>
+      <a class="a2a_button_telegram"></a>
+      <a class="a2a_button_whatsapp"></a>
+      <a class="a2a_button_copy_link"></a>
+      <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+    </div>
 
     <div class="content-card fade-in">
       <h2>📸 完整相冊（36張）</h2>
@@ -2691,7 +2703,12 @@
         <p style="margin-bottom: 20px; color: rgba(255,255,255,0.8);">
           包含所有照片和影片的原始未壓縮版本（約 70MB）
         </p>
-        <button id="downloadAllBtn" class="download-all-btn" onclick="downloadAll(); gtag('event', 'bulk_download', {method: 'download_all_button', items_count: 44, estimated_size: '70MB'});">
+        <div style="text-align: center; margin-bottom: 15px;">
+          <div class="download-stats" style="display: inline-block; background: rgba(255,255,255,0.15); padding: 8px 20px; border-radius: 20px; backdrop-filter: blur(10px);">
+            <span id="bulk_download-count" class="count-number" style="font-size: 18px; font-weight: 700; color: #fff;">---</span> <span style="color: rgba(255,255,255,0.9);">次完整下載</span>
+          </div>
+        </div>
+        <button id="downloadAllBtn" class="download-all-btn" onclick="downloadAll(); trackDownload('bulk_download'); gtag('event', 'bulk_download', {method: 'download_all_button', items_count: 44, estimated_size: '70MB'});">
           📦 一鍵下載全部媒體 (.zip)
         </button>
         <div id="downloadProgress" style="margin-top: 20px; display: none;">
@@ -2767,7 +2784,7 @@
               <span id="photo_005-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="images/profiles/5.jpg" download="tingyuun_photo_005.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'photo_005\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_photo_005.jpg\', file_type: \'profile_photo\', item_id: \'photo_005\'});">📥 下載</a>
+          <a href="images/profiles/5.jpg" download="tingyuun_photo_005.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('photo_005'); gtag('event', 'file_download', {file_name: 'tingyuun_photo_005.jpg', file_type: 'profile_photo', item_id: 'photo_005'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="5">
@@ -2775,11 +2792,11 @@
           <div class="gallery-overlay">
             <div>照片 #6</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="photo_006-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="images/profiles/6.jpg" download="tingyuun_photo_006.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'photo_006\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_photo_006.jpg\', file_type: \'profile_photo\', item_id: \'photo_006\'});">📥 下載</a>
+          </div>
+          <a href="images/profiles/6.jpg" download="tingyuun_photo_006.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('photo_006'); gtag('event', 'file_download', {file_name: 'tingyuun_photo_006.jpg', file_type: 'profile_photo', item_id: 'photo_006'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="6">
@@ -2787,11 +2804,11 @@
           <div class="gallery-overlay">
             <div>學生證</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="student_id-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="images/help/student_id.jpg" download="tingyuun_student_id.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'student_id\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_student_id.jpg\', file_type: \'student_id\', item_id: \'student_id\'});">📥 下載</a>
+          </div>
+          <a href="images/help/student_id.jpg" download="tingyuun_student_id.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('student_id'); gtag('event', 'file_download', {file_name: 'tingyuun_student_id.jpg', file_type: 'student_id', item_id: 'student_id'});">📥 下載</a>
         </div>
         
         <!-- TWZP 1155 加料系列 -->
@@ -2800,11 +2817,11 @@
           <div class="gallery-overlay">
             <div>TWZP #1</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_001-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_001.jpg" download="tingyuun_twzp_001.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_001\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_001.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_001\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_001.jpg" download="tingyuun_twzp_001.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_001'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_001.jpg', file_type: 'twzp_photo', item_id: 'twzp_001'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="8">
@@ -2812,11 +2829,11 @@
           <div class="gallery-overlay">
             <div>TWZP #2</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_002-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_002.jpg" download="tingyuun_twzp_002.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_002\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_002.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_002\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_002.jpg" download="tingyuun_twzp_002.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_002'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_002.jpg', file_type: 'twzp_photo', item_id: 'twzp_002'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="9">
@@ -2824,11 +2841,11 @@
           <div class="gallery-overlay">
             <div>TWZP #3</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_003-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_003.jpg" download="tingyuun_twzp_003.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_003\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_003.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_003\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_003.jpg" download="tingyuun_twzp_003.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_003'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_003.jpg', file_type: 'twzp_photo', item_id: 'twzp_003'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="10">
@@ -2836,11 +2853,11 @@
           <div class="gallery-overlay">
             <div>TWZP #4</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_004-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_004.jpg" download="tingyuun_twzp_004.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_004\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_004.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_004\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_004.jpg" download="tingyuun_twzp_004.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_004'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_004.jpg', file_type: 'twzp_photo', item_id: 'twzp_004'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="11">
@@ -2848,11 +2865,11 @@
           <div class="gallery-overlay">
             <div>TWZP #5</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_005-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_005.jpg" download="tingyuun_twzp_005.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_005\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_005.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_005\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_005.jpg" download="tingyuun_twzp_005.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_005'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_005.jpg', file_type: 'twzp_photo', item_id: 'twzp_005'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="12">
@@ -2860,11 +2877,11 @@
           <div class="gallery-overlay">
             <div>TWZP #6</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_006-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_006.jpg" download="tingyuun_twzp_006.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_006\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_006.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_006\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_006.jpg" download="tingyuun_twzp_006.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_006'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_006.jpg', file_type: 'twzp_photo', item_id: 'twzp_006'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="13">
@@ -2872,11 +2889,11 @@
           <div class="gallery-overlay">
             <div>TWZP #7</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_007-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_007.jpg" download="tingyuun_twzp_007.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_007\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_007.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_007\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_007.jpg" download="tingyuun_twzp_007.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_007'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_007.jpg', file_type: 'twzp_photo', item_id: 'twzp_007'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="14">
@@ -2884,11 +2901,11 @@
           <div class="gallery-overlay">
             <div>TWZP #8</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_008-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_008.jpg" download="tingyuun_twzp_008.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_008\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_008.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_008\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_008.jpg" download="tingyuun_twzp_008.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_008'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_008.jpg', file_type: 'twzp_photo', item_id: 'twzp_008'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="15">
@@ -2896,11 +2913,11 @@
           <div class="gallery-overlay">
             <div>TWZP #9</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_009-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_009.jpg" download="tingyuun_twzp_009.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_009\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_009.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_009\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_009.jpg" download="tingyuun_twzp_009.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_009'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_009.jpg', file_type: 'twzp_photo', item_id: 'twzp_009'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="16">
@@ -2908,11 +2925,11 @@
           <div class="gallery-overlay">
             <div>TWZP #10</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_010-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_010.jpg" download="tingyuun_twzp_010.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_010\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_010.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_010\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_010.jpg" download="tingyuun_twzp_010.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_010'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_010.jpg', file_type: 'twzp_photo', item_id: 'twzp_010'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="17">
@@ -2920,11 +2937,11 @@
           <div class="gallery-overlay">
             <div>TWZP #11</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_011-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_011.jpg" download="tingyuun_twzp_011.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_011\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_011.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_011\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_011.jpg" download="tingyuun_twzp_011.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_011'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_011.jpg', file_type: 'twzp_photo', item_id: 'twzp_011'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="18">
@@ -2932,11 +2949,11 @@
           <div class="gallery-overlay">
             <div>TWZP #12</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_012-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_012.jpg" download="tingyuun_twzp_012.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_012\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_012.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_012\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_012.jpg" download="tingyuun_twzp_012.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_012'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_012.jpg', file_type: 'twzp_photo', item_id: 'twzp_012'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="19">
@@ -2944,11 +2961,11 @@
           <div class="gallery-overlay">
             <div>TWZP #13</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_013-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_013.jpg" download="tingyuun_twzp_013.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_013\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_013.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_013\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_013.jpg" download="tingyuun_twzp_013.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_013'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_013.jpg', file_type: 'twzp_photo', item_id: 'twzp_013'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="20">
@@ -2956,11 +2973,11 @@
           <div class="gallery-overlay">
             <div>TWZP #14</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_014-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_014.jpg" download="tingyuun_twzp_014.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_014\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_014.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_014\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_014.jpg" download="tingyuun_twzp_014.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_014'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_014.jpg', file_type: 'twzp_photo', item_id: 'twzp_014'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="21">
@@ -2968,11 +2985,11 @@
           <div class="gallery-overlay">
             <div>TWZP #15</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_015-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_015.jpg" download="tingyuun_twzp_015.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_015\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_015.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_015\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_015.jpg" download="tingyuun_twzp_015.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_015'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_015.jpg', file_type: 'twzp_photo', item_id: 'twzp_015'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="22">
@@ -2980,11 +2997,11 @@
           <div class="gallery-overlay">
             <div>TWZP #16</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_016-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_016.jpg" download="tingyuun_twzp_016.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_016\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_016.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_016\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_016.jpg" download="tingyuun_twzp_016.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_016'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_016.jpg', file_type: 'twzp_photo', item_id: 'twzp_016'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="23">
@@ -2992,11 +3009,11 @@
           <div class="gallery-overlay">
             <div>TWZP #17</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_017-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_017.jpg" download="tingyuun_twzp_017.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_017\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_017.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_017\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_017.jpg" download="tingyuun_twzp_017.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_017'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_017.jpg', file_type: 'twzp_photo', item_id: 'twzp_017'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="24">
@@ -3004,11 +3021,11 @@
           <div class="gallery-overlay">
             <div>TWZP #18</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_018-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_018.jpg" download="tingyuun_twzp_018.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_018\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_018.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_018\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_018.jpg" download="tingyuun_twzp_018.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_018'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_018.jpg', file_type: 'twzp_photo', item_id: 'twzp_018'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="25">
@@ -3016,11 +3033,11 @@
           <div class="gallery-overlay">
             <div>TWZP #19</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_019-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_019.jpg" download="tingyuun_twzp_019.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_019\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_019.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_019\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_019.jpg" download="tingyuun_twzp_019.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_019'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_019.jpg', file_type: 'twzp_photo', item_id: 'twzp_019'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="26">
@@ -3028,11 +3045,11 @@
           <div class="gallery-overlay">
             <div>TWZP #20</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_020-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_020.jpg" download="tingyuun_twzp_020.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_020\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_020.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_020\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_020.jpg" download="tingyuun_twzp_020.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_020'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_020.jpg', file_type: 'twzp_photo', item_id: 'twzp_020'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="27">
@@ -3040,11 +3057,11 @@
           <div class="gallery-overlay">
             <div>TWZP #21</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_021-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_021.jpg" download="tingyuun_twzp_021.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_021\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_021.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_021\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_021.jpg" download="tingyuun_twzp_021.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_021'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_021.jpg', file_type: 'twzp_photo', item_id: 'twzp_021'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="28">
@@ -3052,11 +3069,11 @@
           <div class="gallery-overlay">
             <div>TWZP #22</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_022-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_022.jpg" download="tingyuun_twzp_022.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_022\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_022.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_022\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_022.jpg" download="tingyuun_twzp_022.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_022'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_022.jpg', file_type: 'twzp_photo', item_id: 'twzp_022'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="29">
@@ -3064,11 +3081,11 @@
           <div class="gallery-overlay">
             <div>TWZP #23</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_023-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_023.jpg" download="tingyuun_twzp_023.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_023\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_023.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_023\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_023.jpg" download="tingyuun_twzp_023.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_023'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_023.jpg', file_type: 'twzp_photo', item_id: 'twzp_023'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="30">
@@ -3076,11 +3093,11 @@
           <div class="gallery-overlay">
             <div>TWZP #24</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_024-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_024.jpg" download="tingyuun_twzp_024.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_024\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_024.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_024\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_024.jpg" download="tingyuun_twzp_024.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_024'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_024.jpg', file_type: 'twzp_photo', item_id: 'twzp_024'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="31">
@@ -3088,11 +3105,11 @@
           <div class="gallery-overlay">
             <div>TWZP #25</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_025-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_025.jpg" download="tingyuun_twzp_025.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_025\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_025.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_025\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_025.jpg" download="tingyuun_twzp_025.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_025'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_025.jpg', file_type: 'twzp_photo', item_id: 'twzp_025'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="32">
@@ -3100,11 +3117,11 @@
           <div class="gallery-overlay">
             <div>TWZP #26</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_026-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_026.jpg" download="tingyuun_twzp_026.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_026\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_026.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_026\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_026.jpg" download="tingyuun_twzp_026.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_026'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_026.jpg', file_type: 'twzp_photo', item_id: 'twzp_026'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="33">
@@ -3112,11 +3129,11 @@
           <div class="gallery-overlay">
             <div>TWZP #27</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_027-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_027.jpg" download="tingyuun_twzp_027.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_027\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_027.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_027\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_027.jpg" download="tingyuun_twzp_027.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_027'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_027.jpg', file_type: 'twzp_photo', item_id: 'twzp_027'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="34">
@@ -3124,11 +3141,11 @@
           <div class="gallery-overlay">
             <div>TWZP #28</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_028-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_028.jpg" download="tingyuun_twzp_028.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_028\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_028.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_028\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_028.jpg" download="tingyuun_twzp_028.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_028'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_028.jpg', file_type: 'twzp_photo', item_id: 'twzp_028'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="35">
@@ -3136,11 +3153,11 @@
           <div class="gallery-overlay">
             <div>TWZP #29</div>
             <small>點擊放大</small>
-          <div class="download-stats">
+            <div class="download-stats">
               <span id="twzp_029-count" class="count-number">---</span> 次下載
             </div>
-            </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_029.jpg" download="tingyuun_twzp_029.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload(\'twzp_029\'); gtag(\'event\', \'file_download\', {file_name: \'tingyuun_twzp_029.jpg\', file_type: \'twzp_photo\', item_id: \'twzp_029\'});">📥 下載</a>
+          </div>
+          <a href="TWZP 1155 加料/P/twzp1155_img_029.jpg" download="tingyuun_twzp_029.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_029'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_029.jpg', file_type: 'twzp_photo', item_id: 'twzp_029'});">📥 下載</a>
         </div>
       </div>
     </div>
@@ -3328,6 +3345,29 @@
         <p style="color: rgba(255,255,255,0.9); font-size: 14px; line-height: 1.6;">所有關於黃庭筠的常見問題一次解答</p>
       </a>
     </div>
+  </section>
+
+  <!-- Giscus 留言討論區 -->
+  <section class="content-card fade-in" style="margin-top: 40px;">
+    <h2 style="text-align: center; margin-bottom: 20px;">💬 留言討論</h2>
+    <p style="text-align: center; color: rgba(255,255,255,0.8); margin-bottom: 30px;">
+      歡迎使用 GitHub 帳號登入留言討論,分享你的想法或提供更多資訊
+    </p>
+    <script src="https://giscus.app/client.js"
+            data-repo="tingyuun/tingyuun.github.io"
+            data-repo-id="R_kgDOOY4f8g"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOOY4f8s4Cxz1f"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="preferred_color_scheme"
+            data-lang="zh-TW"
+            crossorigin="anonymous"
+            async>
+    </script>
   </section>
 
   <!-- 頁腳 -->
@@ -3661,6 +3701,8 @@
   <script>
     // 所有需要追蹤的項目 ID
     const allItemIds = [
+      // 批量下載
+      'bulk_download',
       // 6個人照片
       'photo_001', 'photo_002', 'photo_003', 'photo_004', 'photo_005', 'photo_006',
       // 學生證
@@ -3754,5 +3796,8 @@
       });
     });
   </script>
+  
+  <!-- AddToAny 分享按鈕腳本 -->
+  <script async src="https://static.addtoany.com/menu/page.js"></script>
 </body>
 </html>
