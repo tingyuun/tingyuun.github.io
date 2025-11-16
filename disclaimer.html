@@ -18,19 +18,6 @@
   <!-- Canonical URL -->
   <link rel="canonical" href="https://tingyuun.github.io/disclaimer.html">
   
-  <!-- Open Graph -->
-  <meta property="og:title" content="免責聲明與使用條款 - 黃庭筠互動網站">
-  <meta property="og:description" content="閱讀本站免責聲明、使用條款與注意事項">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://tingyuun.github.io/disclaimer.html">
-  <meta property="og:image" content="https://tingyuun.github.io/images/profiles/1.png">
-  
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="免責聲明與使用條款">
-  <meta name="twitter:description" content="閱讀本站免責聲明、使用條款與注意事項">
-  <meta name="twitter:image" content="https://tingyuun.github.io/images/profiles/1.png">
-  
   <!-- 成人內容標記 -->
   <meta name="rating" content="adult">
   <link rel="manifest" href="manifest.json">
@@ -76,6 +63,12 @@
     ]
   }
   </script>
+  
+  <!-- 效能優化: DNS Prefetch & Preconnect -->
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preload" href="css/common.css" as="style">
+  <link rel="preload" href="js/common.js" as="script">
   
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FCK2EQM41Z"></script>
@@ -157,14 +150,13 @@
   <nav class="main-nav">
     <div class="nav-container">
       <a href="/" class="nav-logo">黃庭筠</a>
-            <ul class="nav-menu">
+      <ul class="nav-menu">
         <li><a href="/">首頁</a></li>
         <li><a href="/about.html">關於她</a></li>
         <li><a href="/gallery.html">照片集</a></li>
         <li><a href="/story.html">事件始末</a></li>
         <li><a href="/faq.html">常見問題</a></li>
         <li><a href="/resources.html">資源連結</a></li>
-        <li><a href="/contact.html">聯絡我們</a></li>
       </ul>
       <div class="nav-toggle">☰</div>
     </div>
@@ -176,23 +168,11 @@
   </nav>
 
   <!-- 主要內容 -->
-    <div class="page-container">
-    <h1 class="page-title">⚠️ 免責聲明</h1>
-    <p class="page-subtitle">重要法律聲明 | 請仔細閱讀</p>
+  <div class="page-container">
+    <h1 class="page-title">⚖️ 免責聲明與使用條款</h1>
+    <p class="page-subtitle">Disclaimer and Terms of Use</p>
 
-    <!-- AddToAny 分享按鈕 -->
-    <div class="a2a_kit a2a_kit_size_32 a2a_default_style" style="text-align: center; margin: 20px 0; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 10px; backdrop-filter: blur(10px);">
-      <span style="color: #fff; margin-right: 10px; font-weight: 500;">📤 分享此頁:</span>
-      <a class="a2a_button_facebook"></a>
-      <a class="a2a_button_twitter"></a>
-      <a class="a2a_button_line"></a>
-      <a class="a2a_button_telegram"></a>
-      <a class="a2a_button_whatsapp"></a>
-      <a class="a2a_button_email"></a>
-      <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-    </div>
-
-    <!-- 聲明內容 -->
+    <!-- 重要提示 -->
     <div class="highlight-box fade-in">
       <p><strong>重要提示：</strong>在使用本網站前，請仔細閱讀以下條款。繼續訪問或使用本網站即表示您已閱讀、理解並同意遵守以下所有條款與聲明。</p>
     </div>
@@ -451,7 +431,7 @@
         <p style="color: rgba(255,255,255,0.9); font-size: 14px; line-height: 1.6;">黃庭筠完整背景資料</p>
       </a>
       <a href="/resources.html" style="text-decoration: none; background: rgba(255,255,255,0.15); padding: 25px; border-radius: 15px; transition: all 0.3s; border: 2px solid rgba(255,105,180,0.3);" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='rgba(255,105,180,0.8)'" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(255,105,180,0.3)'">
-        <h3 style="color: #ff69b4; margin-bottom: 10px; font-size: 20px;">🔗 資源連結</h3>
+        <h3 style="color: #fff; margin-bottom: 10px; font-size: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">🔗 資源連結</h3>
         <p style="color: rgba(255,255,255,0.9); font-size: 14px; line-height: 1.6;">外流資源下載連結大全</p>
       </a>
     </div>
@@ -488,6 +468,6 @@
   </footer>
 
   <!-- JavaScript -->
-  <script src="js/common.js"></script>
+  <script defer src="js/common.js"></script>
 </body>
 </html>
