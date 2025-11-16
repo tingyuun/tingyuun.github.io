@@ -1186,79 +1186,6 @@
   </section>
 
   <!-- Formspree 問題反饋表單 -->
-  <section class="content-card fade-in" style="margin-top: 40px;">
-    <h2 style="text-align: center; margin-bottom: 15px;">📮 問題反饋 & 資料提供</h2>
-    <p style="text-align: center; color: rgba(255,255,255,0.8); margin-bottom: 30px;">
-      遇到問題?想提供更多資訊?有新功能建議?歡迎填寫表單告訴我們
-    </p>
-    
-    <form action="https://formspree.io/f/xjkjpeld" method="POST" style="max-width: 600px; margin: 0 auto;">
-      <div style="margin-bottom: 20px;">
-        <label for="feedback-type" style="display: block; color: #fff; margin-bottom: 8px; font-weight: 500;">問題類型 *</label>
-        <select id="feedback-type" name="type" required style="width: 100%; padding: 12px; border-radius: 8px; border: 2px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.1); color: #fff; font-size: 15px;">
-          <option value="" style="color: #000;">請選擇...</option>
-          <option value="問題反饋" style="color: #000;">🐛 問題反饋</option>
-          <option value="資料提供" style="color: #000;">📂 資料提供</option>
-          <option value="新功能建議" style="color: #000;">💡 新功能建議</option>
-          <option value="連結失效" style="color: #000;">🔗 連結失效回報</option>
-          <option value="其他" style="color: #000;">📝 其他</option>
-        </select>
-      </div>
-      
-      <div style="margin-bottom: 20px;">
-        <label for="feedback-title" style="display: block; color: #fff; margin-bottom: 8px; font-weight: 500;">標題 *</label>
-        <input type="text" id="feedback-title" name="title" required placeholder="簡短描述你的問題或建議" style="width: 100%; padding: 12px; border-radius: 8px; border: 2px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.1); color: #fff; font-size: 15px;">
-      </div>
-      
-      <div style="margin-bottom: 20px;">
-        <label for="feedback-message" style="display: block; color: #fff; margin-bottom: 8px; font-weight: 500;">詳細描述 *</label>
-        <textarea id="feedback-message" name="message" required rows="6" placeholder="請詳細描述你的問題、提供的資料或建議..." style="width: 100%; padding: 12px; border-radius: 8px; border: 2px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.1); color: #fff; font-size: 15px; resize: vertical;"></textarea>
-      </div>
-      
-      <div style="margin-bottom: 20px;">
-        <label for="feedback-email" style="display: block; color: #fff; margin-bottom: 8px; font-weight: 500;">電子郵件 (選填)</label>
-        <input type="email" id="feedback-email" name="email" placeholder="如需回覆請留下 Email" style="width: 100%; padding: 12px; border-radius: 8px; border: 2px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.1); color: #fff; font-size: 15px;">
-      </div>
-      
-      <div style="margin-bottom: 20px;">
-        <label for="feedback-file" style="display: block; color: #fff; margin-bottom: 8px; font-weight: 500;">附件 (選填)</label>
-        <input type="file" id="feedback-file" name="attachment" accept="image/*,video/*,.pdf,.zip" style="width: 100%; padding: 12px; border-radius: 8px; border: 2px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.1); color: #fff; font-size: 15px;">
-        <small style="color: rgba(255,255,255,0.6); display: block; margin-top: 5px;">支援圖片、影片、PDF、ZIP,最大 10MB</small>
-      </div>
-      
-      <button type="submit" style="width: 100%; padding: 15px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(102, 126, 234, 0.6)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(102, 126, 234, 0.4)'">
-        📤 送出表單
-      </button>
-      
-      <p style="text-align: center; color: rgba(255,255,255,0.6); font-size: 13px; margin-top: 15px;">
-        提交後我們會盡快處理你的反饋,感謝你的支持!
-      </p>
-    </form>
-  </section>
-
-  <!-- Giscus 留言討論區 -->
-  <section class="content-card fade-in" style="margin-top: 40px;">
-    <h2 style="text-align: center; margin-bottom: 20px;">💬 留言討論</h2>
-    <p style="text-align: center; color: rgba(255,255,255,0.8); margin-bottom: 30px;">
-      歡迎使用 GitHub 帳號登入留言討論
-    </p>
-    <script src="https://giscus.app/client.js"
-            data-repo="tingyuun/tingyuun.github.io"
-            data-repo-id="R_kgDOOY4f8g"
-            data-category="Announcements"
-            data-category-id="DIC_kwDOOY4f8s4Cxz1f"
-            data-mapping="pathname"
-            data-strict="0"
-            data-reactions-enabled="1"
-            data-emit-metadata="0"
-            data-input-position="bottom"
-            data-theme="preferred_color_scheme"
-            data-lang="zh-TW"
-            crossorigin="anonymous"
-            async>
-    </script>
-  </section>
-
   <!-- 頁腳 -->
   <footer class="page-footer">
     <div class="footer-content">
@@ -1267,6 +1194,7 @@
         <a href="/about.html">關於</a>
         <a href="/gallery.html">照片</a>
         <a href="/resources.html">資源</a>
+        <a href="/contact.html">聯絡</a>
         <a href="/disclaimer.html">免責聲明</a>
       </div>
       <p class="footer-text">
