@@ -921,8 +921,8 @@
     若您未滿18歲，請立即離開。<br>
     點擊「進入網站」代表您已確認年滿18歲，並同意觀看相關內容。</p>
     <div>
-      <button id="enter-button" class="action-button">進入網站</button>
-      <button id="exit-button" class="action-button">離開</button>
+      <button id="enter-button" class="action-button" onclick="gtag('event', 'age_verification', {event_category: 'User_Action', event_label: 'Enter_Site', action: 'accept_18plus'});">進入網站</button>
+      <button id="exit-button" class="action-button" onclick="gtag('event', 'age_verification', {event_category: 'User_Action', event_label: 'Exit_Site', action: 'reject_18plus'});">離開</button>
     </div>
   </div>
   
@@ -1031,10 +1031,10 @@
         <button id="add-text-button" class="button">添加文字</button>
       </div>
       <div class="controls-container">
-        <button id="random-text-button" class="button small-button">隨機文字</button>
-        <button id="shoot-button" class="button small-button">射爆她！</button>
-        <button id="clean-button" class="button small-button">清除畫布</button>
-        <button id="custom-mode-button" class="button small-button">自定義</button>
+        <button id="random-text-button" class="button small-button" onclick="gtag('event', 'add_random_text', {event_category: 'Canvas_Action', event_label: 'Random_Text'});">隨機文字</button>
+        <button id="shoot-button" class="button small-button" onclick="gtag('event', 'start_shooting', {event_category: 'Canvas_Action', event_label: 'Shoot_Mode'});">射爆她！</button>
+        <button id="clean-button" class="button small-button" onclick="gtag('event', 'clear_canvas', {event_category: 'Canvas_Action', event_label: 'Clear_All'});">清除畫布</button>
+        <button id="custom-mode-button" class="button small-button" onclick="gtag('event', 'custom_image_modal', {event_category: 'Canvas_Action', event_label: 'Open_Custom'});">自定義</button>
       </div>
       <p class="info">玩弄這欠幹婊子！使勁羞辱她！</p>
     </div>

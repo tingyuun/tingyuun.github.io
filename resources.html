@@ -333,12 +333,12 @@
       
       <h3 style="margin-top: 30px;">🏷️ 快速分類導航</h3>
       <div class="resource-tags">
-        <span class="resource-tag" style="cursor: pointer;" onclick="document.getElementById('adult-videos').scrollIntoView({behavior: 'smooth'})">🎬 成人影片平台</span>
-        <span class="resource-tag" style="cursor: pointer;" onclick="document.getElementById('gossip').scrollIntoView({behavior: 'smooth'})">🍉 吃瓜爆料平台</span>
-        <span class="resource-tag" style="cursor: pointer;" onclick="document.getElementById('news').scrollIntoView({behavior: 'smooth'})">📰 新聞媒體報導</span>
-        <span class="resource-tag" style="cursor: pointer;" onclick="document.getElementById('social').scrollIntoView({behavior: 'smooth'})">💬 社群討論平台</span>
-        <span class="resource-tag" style="cursor: pointer;" onclick="document.getElementById('telegram').scrollIntoView({behavior: 'smooth'})">📱 Telegram頻道</span>
-        <span class="resource-tag" style="cursor: pointer;" onclick="document.getElementById('other').scrollIntoView({behavior: 'smooth'})">🌐 其他資源平台</span>
+        <span class="resource-tag" style="cursor: pointer;" onclick="document.getElementById('adult-videos').scrollIntoView({behavior: 'smooth'}); gtag('event', 'quick_navigation', {event_category: 'Navigation', event_label: 'Adult_Videos', section: '成人影片平台'});">🎬 成人影片平台</span>
+        <span class="resource-tag" style="cursor: pointer;" onclick="document.getElementById('gossip').scrollIntoView({behavior: 'smooth'}); gtag('event', 'quick_navigation', {event_category: 'Navigation', event_label: 'Gossip', section: '吃瓜爆料平台'});">🍉 吃瓜爆料平台</span>
+        <span class="resource-tag" style="cursor: pointer;" onclick="document.getElementById('news').scrollIntoView({behavior: 'smooth'}); gtag('event', 'quick_navigation', {event_category: 'Navigation', event_label: 'News', section: '新聞媒體報導'});">📰 新聞媒體報導</span>
+        <span class="resource-tag" style="cursor: pointer;" onclick="document.getElementById('social').scrollIntoView({behavior: 'smooth'}); gtag('event', 'quick_navigation', {event_category: 'Navigation', event_label: 'Social', section: '社群討論平台'});">💬 社群討論平台</span>
+        <span class="resource-tag" style="cursor: pointer;" onclick="document.getElementById('telegram').scrollIntoView({behavior: 'smooth'}); gtag('event', 'quick_navigation', {event_category: 'Navigation', event_label: 'Telegram', section: 'Telegram頻道'});">📱 Telegram頻道</span>
+        <span class="resource-tag" style="cursor: pointer;" onclick="document.getElementById('other').scrollIntoView({behavior: 'smooth'}); gtag('event', 'quick_navigation', {event_category: 'Navigation', event_label: 'Other', section: '其他資源平台'});">🌐 其他資源平台</span>
       </div>
     </div>
 
@@ -374,7 +374,7 @@
           <li>可靠性：⭐⭐⭐⭐⭐</li>
         </ul>
         
-        <a href="https://zh.wikipedia.org/wiki/黃庭筠性愛影片外流事件" target="_blank" rel="noopener noreferrer" class="resource-link">
+        <a href="https://zh.wikipedia.org/wiki/黃庭筠性愛影片外流事件" target="_blank" rel="noopener noreferrer" class="resource-link" onclick="gtag('event', 'external_link_click', {event_category: 'Outbound_Link', event_label: 'Wikipedia', platform: '維基百科', link_type: '新聞媒體'});">
           🚀 前往維基百科查看
         </a>
       </div>
@@ -1195,5 +1195,55 @@
 
   <!-- JavaScript -->
   <script defer src="js/common.js"></script>
+  
+  <!-- GA4 External Link Tracking -->
+  <script>
+    // 追蹤所有外部連結點擊
+    document.addEventListener('DOMContentLoaded', function() {
+      const externalLinks = document.querySelectorAll('a[target="_blank"][href^="http"]');
+      
+      externalLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          const url = this.href;
+          const linkText = this.textContent.trim();
+          
+          // 識別平台類型
+          let platform = 'Unknown';
+          let category = 'External_Link';
+          
+          if (url.includes('wikipedia.org')) {
+            platform = '維基百科';
+            category = '新聞媒體';
+          } else if (url.includes('51chigua')) {
+            platform = '51吃瓜網';
+            category = '爆料平台';
+          } else if (url.includes('911blw')) {
+            platform = '911爆料網';
+            category = '爆料平台';
+          } else if (url.includes('91baoliao')) {
+            platform = '91爆料網';
+            category = '爆料平台';
+          } else if (url.includes('missav') || url.includes('jable')) {
+            platform = url.includes('missav') ? 'MissAV' : 'Jable';
+            category = '成人影片';
+          } else if (url.includes('t.me') || url.includes('telegram')) {
+            platform = 'Telegram';
+            category = '社群媒體';
+          } else if (url.includes('ptt') || url.includes('dcard')) {
+            platform = url.includes('ptt') ? 'PTT' : 'Dcard';
+            category = '論壇';
+          }
+          
+          // 發送 GA4 事件
+          gtag('event', 'external_link_click', {
+            event_category: category,
+            event_label: platform,
+            link_url: url,
+            link_text: linkText.substring(0, 50)
+          });
+        });
+      });
+    });
+  </script>
 </body>
 </html>

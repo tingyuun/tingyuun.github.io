@@ -559,6 +559,7 @@
       question.addEventListener('click', () => {
         const item = question.parentElement;
         const wasActive = item.classList.contains('active');
+        const questionText = question.querySelector('h3').textContent;
         
         // 關閉所有其他項目
         document.querySelectorAll('.faq-item').forEach(i => {
@@ -568,6 +569,20 @@
         // 切換當前項目
         if (!wasActive) {
           item.classList.add('active');
+          
+          // GA4 追蹤 FAQ 展開
+          gtag('event', 'faq_expand', {
+            event_category: 'FAQ_Interaction',
+            event_label: questionText,
+            action: 'expand'
+          });
+        } else {
+          // GA4 追蹤 FAQ 收合
+          gtag('event', 'faq_collapse', {
+            event_category: 'FAQ_Interaction',
+            event_label: questionText,
+            action: 'collapse'
+          });
         }
       });
     });
