@@ -5,333 +5,252 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO Meta 標籤 -->
-  <title>聯絡我們 - 問題反饋 & 資料提供 | 黃庭筠互動網站</title>
-  <meta name="description" content="遇到問題?想提供更多資訊?有新功能建議?歡迎透過表單聯絡我們,我們會盡快處理你的反饋。">
-  <meta name="keywords" content="聯絡,問題反饋,資料提供,新功能建議,黃庭筠">
+  <title>聯絡我們 | 黃庭筠互動網站</title>
+  <meta name="description" content="聯絡黃庭筠互動網站，提供意見反饋、問題回報、合作洽詢等聯絡管道。">
+  <meta name="keywords" content="聯絡我們,黃庭筠,意見反饋,問題回報,聯絡資訊">
+  <meta name="robots" content="index, follow">
   
   <!-- Canonical URL -->
   <link rel="canonical" href="https://tingyuun.github.io/contact.html">
   
-  <!-- Open Graph -->
-  <meta property="og:title" content="聯絡我們 - 黃庭筠互動網站">
-  <meta property="og:description" content="問題反饋、資料提供、新功能建議">
-  <meta property="og:url" content="https://tingyuun.github.io/contact.html">
+  <!-- Open Graph Meta 標籤 -->
+  <meta property="og:title" content="聯絡我們 | 黃庭筠互動網站">
+  <meta property="og:description" content="聯絡黃庭筠互動網站，提供意見反饋、問題回報、合作洽詢等聯絡管道">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tingyuun.github.io/contact.html">
+  <meta property="og:image" content="https://tingyuun.github.io/images/profiles/1.png">
+  <meta property="og:site_name" content="黃庭筠互動網站">
+  <meta property="og:locale" content="zh_TW">
   
-  <!-- 成人內容標記 -->
-  <meta name="rating" content="adult">
+  <!-- PWA -->
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#ff1493">
+  
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/favicon.png">
   
-  <!-- Google Analytics -->
+  <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FCK2EQM41Z"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-FCK2EQM41Z');
+    gtag('config', 'G-FCK2EQM41Z', {
+      page_title: '聯絡我們',
+      page_location: window.location.href,
+      page_path: '/contact.html'
+    });
   </script>
   
-  <!-- 共用樣式 -->
+  <!-- CSS -->
   <link rel="stylesheet" href="css/common.css">
   
   <style>
-    .form-container {
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 40px;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 20px;
-      backdrop-filter: blur(10px);
-      border: 2px solid rgba(255, 255, 255, 0.1);
-    }
-    
-    .form-group {
-      margin-bottom: 25px;
-    }
-    
-    .form-label {
-      display: block;
-      color: #fff;
-      margin-bottom: 10px;
-      font-weight: 600;
-      font-size: 16px;
-    }
-    
-    .form-input,
-    .form-select,
-    .form-textarea {
-      width: 100%;
-      padding: 14px 16px;
-      border-radius: 10px;
-      border: 2px solid rgba(255, 255, 255, 0.3);
-      background: rgba(255, 255, 255, 0.1);
-      color: #fff;
-      font-size: 15px;
-      transition: all 0.3s;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    }
-    
-    .form-input:focus,
-    .form-select:focus,
-    .form-textarea:focus {
-      outline: none;
-      border-color: rgba(102, 126, 234, 0.8);
-      background: rgba(255, 255, 255, 0.15);
-      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
-    }
-    
-    .form-select option {
-      background: #1a1a2e;
-      color: #fff;
-    }
-    
-    .form-textarea {
-      resize: vertical;
-      min-height: 150px;
-    }
-    
-    .form-hint {
-      display: block;
-      color: rgba(255, 255, 255, 0.6);
-      font-size: 13px;
-      margin-top: 6px;
-    }
-    
-    .submit-btn {
-      width: 100%;
-      padding: 16px;
+    body {
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      border: none;
-      border-radius: 12px;
-      font-size: 17px;
-      font-weight: 700;
-      cursor: pointer;
-      transition: all 0.3s;
-      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-      text-transform: uppercase;
-      letter-spacing: 1px;
+      min-height: 100vh;
+      color: #fff;
     }
     
-    .submit-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+    .contact-container {
+      max-width: 800px;
+      margin: 120px auto 60px;
+      padding: 40px 20px;
     }
     
-    .submit-btn:active {
-      transform: translateY(0);
-    }
-    
-    .form-footer {
+    .contact-header {
       text-align: center;
-      color: rgba(255, 255, 255, 0.7);
-      font-size: 14px;
-      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+    
+    .contact-header h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    .contact-header p {
+      font-size: 18px;
+      color: rgba(255,255,255,0.9);
       line-height: 1.6;
     }
     
-    .info-boxes {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      margin-bottom: 40px;
+    .contact-section {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px;
+      margin-bottom: 30px;
+      border: 1px solid rgba(255,255,255,0.2);
     }
     
-    .info-box {
-      background: rgba(255, 255, 255, 0.05);
-      padding: 25px;
+    .contact-section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .contact-method {
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
       border-radius: 15px;
-      text-align: center;
-      border: 2px solid rgba(255, 255, 255, 0.1);
+      margin-bottom: 15px;
       transition: all 0.3s;
     }
     
-    .info-box:hover {
-      transform: translateY(-5px);
-      border-color: rgba(255, 105, 180, 0.5);
-      box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
+    .contact-method:hover {
+      background: rgba(255,255,255,0.1);
+      transform: translateX(5px);
     }
     
-    .info-box-icon {
-      font-size: 40px;
+    .contact-method h3 {
+      font-size: 18px;
       margin-bottom: 10px;
+      color: #ff69b4;
     }
     
-    .info-box-title {
+    .contact-method p {
+      color: rgba(255,255,255,0.9);
+      line-height: 1.6;
+      margin-bottom: 5px;
+    }
+    
+    .contact-method a {
       color: #fff;
-      font-weight: 600;
-      margin-bottom: 8px;
+      text-decoration: underline;
+      word-break: break-all;
     }
     
-    .info-box-text {
-      color: rgba(255, 255, 255, 0.7);
-      font-size: 14px;
+    .notice {
+      background: rgba(255,255,255,0.15);
+      padding: 20px;
+      border-radius: 15px;
+      border-left: 4px solid #ff1493;
+      margin-top: 20px;
+    }
+    
+    .notice p {
+      margin: 10px 0;
+      line-height: 1.8;
+    }
+    
+    @media (max-width: 768px) {
+      .contact-container {
+        margin-top: 100px;
+        padding: 20px 15px;
+      }
+      
+      .contact-header h1 {
+        font-size: 32px;
+      }
+      
+      .contact-section {
+        padding: 20px;
+      }
     }
   </style>
 </head>
 <body>
-  <!-- 導航 -->
-  <nav class="main-nav">
+  <!-- 導覽列 -->
+  <nav class="navbar">
     <div class="nav-container">
       <a href="/" class="nav-logo">黃庭筠</a>
       <ul class="nav-menu">
         <li><a href="/">首頁</a></li>
-        <li><a href="/about.html">關於她</a></li>
-        <li><a href="/gallery.html">照片集</a></li>
-        <li><a href="/story.html">事件始末</a></li>
-        <li><a href="/faq.html">常見問題</a></li>
-        <li><a href="/resources.html">資源連結</a></li>
+        <li><a href="/about.html">關於我</a></li>
+        <li><a href="/gallery.html">完整相簿</a></li>
+        <li><a href="/story.html">我的故事</a></li>
+        <li><a href="/faq.html">FAQ</a></li>
+        <li><a href="/resources.html">相關資源</a></li>
         <li><a href="/contact.html" class="active">聯絡我們</a></li>
       </ul>
-      <div class="nav-toggle">☰</div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
-  </nav>
-
-  <!-- 麵包屑 -->
-  <nav class="breadcrumb">
-    <a href="/">首頁</a> <span>></span> 聯絡我們
   </nav>
 
   <!-- 主要內容 -->
-  <div class="page-container">
-    <h1 class="page-title">📮 聯絡我們</h1>
-    <p class="page-subtitle">問題反饋 · 資料提供 · 新功能建議</p>
-    
-    <!-- AddToAny 分享按鈕 -->
-    <div class="a2a_kit a2a_kit_size_32 a2a_default_style" style="text-align: center; margin: 20px 0; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 10px; backdrop-filter: blur(10px);">
-      <span style="color: #fff; margin-right: 10px; font-weight: 500;">📤 分享此頁:</span>
-      <a class="a2a_button_facebook"></a>
-      <a class="a2a_button_twitter"></a>
-      <a class="a2a_button_line"></a>
-      <a class="a2a_button_telegram"></a>
-      <a class="a2a_button_whatsapp"></a>
-      <a class="a2a_button_copy_link"></a>
-      <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+  <div class="contact-container">
+    <div class="contact-header">
+      <h1>📧 聯絡我們</h1>
+      <p>有任何問題、建議或合作需求？歡迎透過以下方式與我們聯絡</p>
     </div>
 
-    <div class="content-card fade-in">
-      <!-- 資訊卡片 -->
-      <div class="info-boxes">
-        <div class="info-box">
-          <div class="info-box-icon">🐛</div>
-          <div class="info-box-title">問題反饋</div>
-          <div class="info-box-text">發現錯誤或功能異常?請告訴我們</div>
-        </div>
-        <div class="info-box">
-          <div class="info-box-icon">📂</div>
-          <div class="info-box-title">資料提供</div>
-          <div class="info-box-text">有更多照片或影片資源?歡迎分享</div>
-        </div>
-        <div class="info-box">
-          <div class="info-box-icon">💡</div>
-          <div class="info-box-title">功能建議</div>
-          <div class="info-box-text">想要什麼新功能?我們洗耳恭聽</div>
-        </div>
-        <div class="info-box">
-          <div class="info-box-icon">🔗</div>
-          <div class="info-box-title">連結失效</div>
-          <div class="info-box-text">發現無法使用的連結?立即回報</div>
-        </div>
+    <!-- 聯絡方式 -->
+    <div class="contact-section">
+      <h2>📮 聯絡管道</h2>
+      
+      <div class="contact-method">
+        <h3>💌 電子郵件</h3>
+        <p>一般諮詢、意見反饋</p>
+        <p><a href="mailto:info@example.com">info@example.com</a></p>
       </div>
+      
+      <div class="contact-method">
+        <h3>🐛 問題回報</h3>
+        <p>網站錯誤、技術問題</p>
+        <p><a href="mailto:support@example.com">support@example.com</a></p>
+      </div>
+      
+      <div class="contact-method">
+        <h3>🤝 商務合作</h3>
+        <p>廣告合作、內容授權</p>
+        <p><a href="mailto:business@example.com">business@example.com</a></p>
+      </div>
+      
+      <div class="contact-method">
+        <h3>💬 社群媒體</h3>
+        <p>追蹤最新動態與公告</p>
+        <p>GitHub: <a href="https://github.com/tingyuun" target="_blank" rel="noopener noreferrer">@tingyuun</a></p>
+      </div>
+    </div>
 
-      <!-- 表單 -->
-      <div class="form-container">
-        <h2 style="text-align: center; color: #fff; margin-bottom: 30px;">
-          ✉️ 填寫表單
-        </h2>
+    <!-- 注意事項 -->
+    <div class="contact-section">
+      <h2>⚠️ 重要提醒</h2>
+      
+      <div class="notice">
+        <p><strong>📌 回覆時間</strong><br>
+        我們會在 1-3 個工作天內回覆您的郵件，敬請耐心等候。</p>
         
-        <form action="https://formspree.io/f/xjkjpeld" method="POST">
-          <div class="form-group">
-            <label for="feedback-type" class="form-label">問題類型 *</label>
-            <select id="feedback-type" name="type" class="form-select" required>
-              <option value="">請選擇...</option>
-              <option value="問題反饋">🐛 問題反饋</option>
-              <option value="資料提供">📂 資料提供</option>
-              <option value="新功能建議">💡 新功能建議</option>
-              <option value="連結失效">🔗 連結失效回報</option>
-              <option value="其他">📝 其他</option>
-            </select>
-          </div>
-          
-          <div class="form-group">
-            <label for="feedback-title" class="form-label">標題 *</label>
-            <input 
-              type="text" 
-              id="feedback-title" 
-              name="title" 
-              class="form-input" 
-              placeholder="簡短描述你的問題或建議" 
-              required
-            >
-          </div>
-          
-          <div class="form-group">
-            <label for="feedback-message" class="form-label">詳細描述 *</label>
-            <textarea 
-              id="feedback-message" 
-              name="message" 
-              class="form-textarea" 
-              placeholder="請詳細描述你的問題、提供的資料或建議...&#10;&#10;例如:&#10;• 發生問題的頁面和步驟&#10;• 你想提供的資料類型&#10;• 你期望的功能效果" 
-              required
-            ></textarea>
-          </div>
-          
-          <div class="form-group">
-            <label for="feedback-email" class="form-label">電子郵件 (選填)</label>
-            <input 
-              type="email" 
-              id="feedback-email" 
-              name="email" 
-              class="form-input" 
-              placeholder="example@email.com"
-            >
-            <small class="form-hint">如需回覆請留下您的 Email</small>
-          </div>
-          
-          <div class="form-group">
-            <label for="feedback-file" class="form-label">附件 (選填)</label>
-            <input 
-              type="file" 
-              id="feedback-file" 
-              name="attachment" 
-              class="form-input" 
-              accept="image/*,video/*,.pdf,.zip"
-            >
-            <small class="form-hint">支援圖片、影片、PDF、ZIP 檔案,最大 10MB</small>
-          </div>
-          
-          <button type="submit" class="submit-btn" onclick="gtag('event', 'form_submit', {event_category: 'Contact', event_label: 'Feedback_Form'});">
-            📤 送出表單
-          </button>
-          
-          <div class="form-footer">
-            <p>提交後我們會盡快處理你的反饋</p>
-            <p>感謝你幫助我們改進網站! ❤️</p>
-          </div>
-        </form>
+        <p><strong>📌 常見問題</strong><br>
+        發信前請先查看 <a href="/faq.html" style="color: #ff69b4;">FAQ 常見問題</a>，您的問題可能已有解答。</p>
+        
+        <p><strong>📌 隱私保護</strong><br>
+        我們重視您的隱私，所有聯絡資訊僅用於回覆用途，不會轉交第三方。</p>
+        
+        <p><strong>📌 不當內容</strong><br>
+        請勿發送垃圾郵件、騷擾訊息或不當內容，違者將列入黑名單。</p>
+        
+        <p><strong>📌 免責聲明</strong><br>
+        本站僅提供資訊展示，詳見 <a href="/disclaimer.html" style="color: #ff69b4;">免責聲明</a>。</p>
       </div>
     </div>
 
-    <!-- 相關連結 -->
-    <section class="content-card fade-in" style="margin-top: 40px;">
-      <h2 style="text-align: center; margin-bottom: 30px;">🔗 其他連結</h2>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
-        <a href="/gallery.html" style="text-decoration: none; background: rgba(255,255,255,0.15); padding: 25px; border-radius: 15px; transition: all 0.3s; border: 2px solid rgba(255,105,180,0.3);" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='rgba(255,105,180,0.8)'" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(255,105,180,0.3)'">
-          <h3 style="color: #ff69b4; margin-bottom: 10px; font-size: 20px;">📸 照片集</h3>
-          <p style="color: rgba(255,255,255,0.9); font-size: 14px;">完整高清照片和影片收藏</p>
+    <!-- 快速連結 -->
+    <div class="contact-section">
+      <h2>🔗 快速連結</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
+        <a href="/" style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; text-align: center; text-decoration: none; color: #fff; transition: all 0.3s;" onmouseover="this.style.background='rgba(255,255,255,0.2)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
+          🏠 返回首頁
         </a>
-        <a href="/resources.html" style="text-decoration: none; background: rgba(255,255,255,0.15); padding: 25px; border-radius: 15px; transition: all 0.3s; border: 2px solid rgba(102,126,234,0.3);" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='rgba(102,126,234,0.8)'" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(102,126,234,0.3)'">
-          <h3 style="color: #667eea; margin-bottom: 10px; font-size: 20px;">📦 資源連結</h3>
-          <p style="color: rgba(255,255,255,0.9); font-size: 14px;">下載連結和相關資源</p>
+        <a href="/gallery.html" style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; text-align: center; text-decoration: none; color: #fff; transition: all 0.3s;" onmouseover="this.style.background='rgba(255,255,255,0.2)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
+          📸 完整相簿
         </a>
-        <a href="/faq.html" style="text-decoration: none; background: rgba(255,255,255,0.15); padding: 25px; border-radius: 15px; transition: all 0.3s; border: 2px solid rgba(148,0,211,0.3);" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='rgba(148,0,211,0.8)'" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(148,0,211,0.3)'">
-          <h3 style="color: #9400d3; margin-bottom: 10px; font-size: 20px;">❓ 常見問題</h3>
-          <p style="color: rgba(255,255,255,0.9); font-size: 14px;">常見疑問快速解答</p>
+        <a href="/faq.html" style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; text-align: center; text-decoration: none; color: #fff; transition: all 0.3s;" onmouseover="this.style.background='rgba(255,255,255,0.2)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
+          ❓ 常見問題
+        </a>
+        <a href="/disclaimer.html" style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; text-align: center; text-decoration: none; color: #fff; transition: all 0.3s;" onmouseover="this.style.background='rgba(255,255,255,0.2)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
+          📄 免責聲明
         </a>
       </div>
-    </section>
+    </div>
   </div>
 
   <!-- 頁腳 -->
@@ -341,8 +260,8 @@
         <a href="/">首頁</a>
         <a href="/about.html">關於</a>
         <a href="/gallery.html">照片</a>
-        <a href="/resources.html">資源</a>
         <a href="/contact.html">聯絡</a>
+        <a href="/resources.html">資源</a>
         <a href="/disclaimer.html">免責聲明</a>
       </div>
       <p class="footer-text">
@@ -355,7 +274,7 @@
       
       <!-- FlagCounter 訪客統計 -->
       <div class="flag-counter" style="text-align: center; margin: 20px 0;">
-        <a href="https://info.flagcounter.com/ckwX" target="_blank" rel="noopener">
+        <a href="https://info.flagcounter.com/ckwX" target="_blank" rel="noopener noreferrer" style="pointer-events: auto;">
           <img src="https://s01.flagcounter.com/count/ckwX/bg_FFFFFF/txt_000000/border_CCCCCC/columns_5/maxflags_10/viewers_cums/labels_0/pageviews_0/flags_0/percent_0/" 
                alt="訪客統計" 
                border="0"
@@ -368,7 +287,17 @@
   <!-- JavaScript -->
   <script defer src="js/common.js"></script>
   
-  <!-- AddToAny 分享按鈕腳本 -->
-  <script async src="https://static.addtoany.com/menu/page.js"></script>
+  <script>
+    // GA4 事件追蹤
+    document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+      link.addEventListener('click', function() {
+        gtag('event', 'contact_click', {
+          event_category: 'Contact',
+          event_label: this.href,
+          contact_method: 'email'
+        });
+      });
+    });
+  </script>
 </body>
 </html>

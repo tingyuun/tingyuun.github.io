@@ -12,6 +12,7 @@ const CORE_ASSETS = [
   '/faq.html',
   '/resources.html',
   '/disclaimer.html',
+  '/contact.html',
   '/404.html',
   '/css/common.css',
   '/js/common.js',
