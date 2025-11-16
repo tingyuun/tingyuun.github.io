@@ -1,0 +1,57 @@
+# robots.txt for tingyuun.github.io
+# 成人內容網站 - 適當配置搜尋引擎訪問權限
+
+# 所有搜尋引擎爬蟲預設規則
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /gallery.html
+Allow: /about.html
+Allow: /story.html
+Allow: /faq.html
+Allow: /resources.html
+Allow: /disclaimer.html
+
+# 優先索引圖片資源
+Allow: /images/*.webp
+Allow: /images/*.jpg
+Allow: /images/*.png
+
+# 禁止索引備份和暫存目錄
+Disallow: /.backup*/
+Disallow: /.git/
+Disallow: /docs/archive/
+Disallow: /ai-docs/
+
+# 爬蟲訪問頻率建議 (1秒延遲以保護伺服器資源)
+Crawl-delay: 1
+
+# Google 圖片爬蟲優化
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /images/profiles/
+Allow: /images/cum/
+Allow: /images/help/
+Crawl-delay: 0.5
+
+# 主流搜尋引擎特定配置
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+# 網站地圖位置 (包含所有類型)
+Sitemap: https://tingyuun.github.io/sitemap.xml
+Sitemap: https://tingyuun.github.io/page-sitemap.xml
+Sitemap: https://tingyuun.github.io/image-sitemap.xml

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Google Search Console 驗證 (請替換為您的驗證碼) -->
+  <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE_HERE">
+  
+  <title>404 - 頁面不存在【返回首頁】| 黃庭筠互動網站</title>
+  <meta name="description" content="⚠️ 抱歉,您訪問的頁面不存在。返回黃庭筠互動網站主頁繼續探索完整照片、影片與互動功能。">
+  <meta name="robots" content="noindex, nofollow">
+  
+  <!-- JSON-LD 結構化資料 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "404 錯誤頁面",
+    "description": "頁面不存在錯誤",
+    "url": "https://tingyuun.github.io/404.html",
+    "inLanguage": "zh-TW",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "黃庭筠互動網站",
+      "url": "https://tingyuun.github.io/"
+    }
+  }
+  </script>
+  
+  <!-- 效能優化: DNS Prefetch & Preconnect -->
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preload" href="css/common.css" as="style">
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FCK2EQM41Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FCK2EQM41Z');
+    
+    // 追蹤 404 錯誤
+    gtag('event', 'page_not_found', {
+      'page_location': window.location.href,
+      'page_referrer': document.referrer
+    });
+  </script>
+  
+  <link rel="stylesheet" href="css/common.css">
+  <style>
+    .error-container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    }
+    
+    .error-content {
+      max-width: 600px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 60px 40px;
+      border: 1px solid rgba(255, 20, 147, 0.3);
+      animation: fadeInUp 0.8s ease;
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .error-code {
+      font-size: 120px;
+      font-weight: bold;
+      background: linear-gradient(45deg, #ff1493, #ff69b4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin: 0;
+      line-height: 1;
+      text-shadow: 0 0 30px rgba(255, 20, 147, 0.5);
+    }
+    
+    .error-title {
+      font-size: 32px;
+      color: #fff;
+      margin: 20px 0;
+      font-weight: 600;
+    }
+    
+    .error-message {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.8);
+      margin: 20px 0 40px;
+      line-height: 1.6;
+    }
+    
+    .error-actions {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .error-btn {
+      padding: 15px 30px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+    
+    .error-btn-primary {
+      background: linear-gradient(45deg, #ff1493, #ff69b4);
+      color: #fff;
+    }
+    
+    .error-btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(255, 20, 147, 0.4);
+    }
+    
+    .error-btn-secondary {
+      background: transparent;
+      color: #ff1493;
+      border-color: #ff1493;
+    }
+    
+    .error-btn-secondary:hover {
+      background: rgba(255, 20, 147, 0.1);
+      transform: translateY(-2px);
+    }
+    
+    .error-suggestions {
+      margin-top: 40px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .error-suggestions h3 {
+      color: #ff1493;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .error-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      margin-top: 15px;
+    }
+    
+    .error-link {
+      padding: 10px 15px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      color: rgba(255, 255, 255, 0.9);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-size: 14px;
+    }
+    
+    .error-link:hover {
+      background: rgba(255, 20, 147, 0.2);
+      color: #ff1493;
+      transform: scale(1.05);
+    }
+    
+    .error-icon {
+      font-size: 60px;
+      margin-bottom: 20px;
+      opacity: 0.8;
+    }
+    
+    @media (max-width: 768px) {
+      .error-code {
+        font-size: 80px;
+      }
+      
+      .error-title {
+        font-size: 24px;
+      }
+      
+      .error-message {
+        font-size: 16px;
+      }
+      
+      .error-content {
+        padding: 40px 30px;
+      }
+      
+      .error-actions {
+        flex-direction: column;
+      }
+      
+      .error-btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="error-container">
+    <div class="error-content">
+      <div class="error-icon">🔍</div>
+      <h1 class="error-code">404</h1>
+      <h2 class="error-title">哎呀！頁面走失了</h2>
+      <p class="error-message">
+        您訪問的頁面可能已被移除、重新命名，或暫時無法使用。<br>
+        別擔心，讓我們幫您找到正確的方向！
+      </p>
+      
+      <div class="error-actions">
+        <a href="/" class="error-btn error-btn-primary">🏠 返回首頁</a>
+        <a href="/gallery.html" class="error-btn error-btn-secondary">📸 瀏覽照片</a>
+      </div>
+      
+      <div class="error-suggestions">
+        <h3>📌 您可能在找這些頁面</h3>
+        <div class="error-links">
+          <a href="/about.html" class="error-link">👤 關於她</a>
+          <a href="/story.html" class="error-link">📖 事件始末</a>
+          <a href="/faq.html" class="error-link">❓ 常見問題</a>
+          <a href="/resources.html" class="error-link">🔗 資源連結</a>
+        </div>
+      </div>
+      
+      <p style="margin-top: 40px; font-size: 12px; color: rgba(255,255,255,0.5);">
+        錯誤代碼: 404 | 如果您認為這是個錯誤，請<a href="/" style="color: #ff1493;">聯繫我們</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // 自動追蹤錯誤路徑
+    console.log('404 Error:', window.location.pathname);
+    
+    // 5秒後淡出提示
+    setTimeout(() => {
+      const suggestions = document.querySelector('.error-suggestions');
+      if (suggestions) {
+        suggestions.style.animation = 'pulse 2s infinite';
+      }
+    }, 3000);
+  </script>
+</body>
+</html>

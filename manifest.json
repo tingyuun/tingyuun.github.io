@@ -1,0 +1,28 @@
+{
+  "name": "大家都來顏射黃庭筠",
+  "short_name": "黃庭筠",
+  "description": "黃庭筠的顏射互動網站 - 在線射精體驗",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ff69b4",
+  "theme_color": "#ff1493",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["entertainment", "lifestyle"],
+  "lang": "zh-TW",
+  "dir": "ltr",
+  "scope": "/"
+}
