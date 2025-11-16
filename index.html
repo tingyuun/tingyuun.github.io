@@ -1169,14 +1169,13 @@
     });
     
     els.applyCustomImage.addEventListener('click', () => {
-      const newImage = new Image();
-      newImage.onload = () => {
-        state.customImage = newImage;
+      state.customImage = new Image();
+      state.customImage.onload = () => {
         state.isUsingCustomImage = true;
         cleanCanvas();
         els.customImageModal.style.display = 'none';
       };
-      newImage.src = els.customImagePreview.src;
+      state.customImage.src = els.customImagePreview.src;
     });
     
     els.resetDefaultImage.addEventListener('click', () => {
@@ -1198,21 +1197,15 @@
         state.isUsingCustomImage = false;
       }
       
-      state.currentProfileIndex = (state.currentProfileIndex + 1) % profileImages.length;
-      
       // 保存當前文字元素
       const savedTextElements = [...state.textElements];
       
-      // 創建新圖片物件並等待載入完成
-      const newImage = new Image();
-      newImage.onload = function() {
-        state.baseImage = newImage;
-        // 清除畫布但不清除文字
+      state.currentProfileIndex = (state.currentProfileIndex + 1) % profileImages.length;
+      state.baseImage.src = profileImages[state.currentProfileIndex];
+      state.baseImage.onload = function() {
         cleanCanvasOnly();
-        // 恢復文字元素
         state.textElements = savedTextElements;
       };
-      newImage.src = profileImages[state.currentProfileIndex];
     }
     
     function preloadAssets() {
@@ -1262,15 +1255,7 @@
     }
     
     function initializeApp() {
-      // 確保 baseImage 已載入完成後才調整 canvas
-      if (state.baseImage.complete) {
-        resizeCanvas();
-      } else {
-        state.baseImage.onload = function() {
-          resizeCanvas();
-        };
-      }
-      
+      resizeCanvas();
       window.addEventListener('resize', () => {
         checkMobile();
         resizeCanvas();
