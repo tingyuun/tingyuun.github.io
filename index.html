@@ -1040,7 +1040,13 @@
       <p class="info">玩弄這欠幹婊子！使勁羞辱她！</p>
     </div>
 
-     
+     <!-- Flag Counter -->
+  <div style="text-align: center; margin: 0 auto; padding-top: 0; opacity: 0.8; transform: scale(0.5); transform-origin: top center; position: fixed; bottom: 0; left: 0; right: 0; height: 20px; pointer-events: none;">
+    <a href="https://info.flagcounter.com/ckwX" style="pointer-events: auto;">
+      <img src="https://s01.flagcounter.com/count/ckwX/bg_FFFFFF/txt_000000/border_CCCCCC/columns_5/maxflags_10/viewers_cums/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0">
+    </a>
+  </div>
+  </div>
 
   <script>
     const canvas = document.getElementById('main-canvas');
@@ -1197,15 +1203,17 @@
         state.isUsingCustomImage = false;
       }
       
+      state.currentProfileIndex = (state.currentProfileIndex + 1) % profileImages.length;
+      state.baseImage.src = profileImages[state.currentProfileIndex];
+      
       // 保存當前文字元素
       const savedTextElements = [...state.textElements];
       
-      state.currentProfileIndex = (state.currentProfileIndex + 1) % profileImages.length;
-      state.baseImage.src = profileImages[state.currentProfileIndex];
-      state.baseImage.onload = function() {
-        cleanCanvasOnly();
-        state.textElements = savedTextElements;
-      };
+      // 清除畫布但不清除文字
+      cleanCanvasOnly();
+      
+      // 恢復文字元素
+      state.textElements = savedTextElements;
     }
     
     function preloadAssets() {
@@ -1617,8 +1625,8 @@
         <a href="/">首頁</a>
         <a href="/about.html">關於</a>
         <a href="/gallery.html">照片</a>
-        <a href="/contact.html">聯絡</a>
         <a href="/resources.html">資源</a>
+        <a href="/contact.html">聯絡</a>
         <a href="/disclaimer.html">免責聲明</a>
       </div>
       <p class="footer-text">
@@ -1628,15 +1636,6 @@
       <p style="font-size: 11px; color: rgba(255, 255, 255, 0.5); margin-top: 5px;">
         本站內容僅供資訊參考,不對第三方連結負責
       </p>
-      <!-- FlagCounter 訪客統計 -->
-      <div class="flag-counter" style="text-align: center; margin: 20px 0;">
-        <a href="https://info.flagcounter.com/ckwX" target="_blank" rel="noopener noreferrer" style="pointer-events: auto;">
-          <img src="https://s01.flagcounter.com/count/ckwX/bg_FFFFFF/txt_000000/border_CCCCCC/columns_5/maxflags_10/viewers_cums/labels_0/pageviews_0/flags_0/percent_0/" 
-               alt="訪客統計" 
-               border="0"
-               loading="lazy">
-        </a>
-      </div>
     </div>
   </footer>
   
