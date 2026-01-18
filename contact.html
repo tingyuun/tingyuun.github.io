@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Content Security Policy -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://static.addtoany.com; style-src 'self' 'unsafe-inline' https://static.addtoany.com; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com https://s7.addtoany.com; form-action 'self' https://formspree.io; frame-src 'none'; object-src 'none'; base-uri 'self';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://static.addtoany.com; style-src 'self' 'unsafe-inline' https://static.addtoany.com; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com https://s7.addtoany.com https://script.google.com https://script.googleusercontent.com; form-action 'self'; frame-src 'none'; object-src 'none'; base-uri 'self';">
   
   <!-- SEO Meta 標籤 -->
   <title>聯絡我們 - 問題反饋 & 資料提供 | 黃庭筠互動網站</title>
-  <meta name="description" content="遇到問題?想提供更多資訊?有新功能建議?歡迎透過表單聯絡我們,我們會盡快處理你的反饋。">
+  <meta name="description" content="遇到問題、想補充資訊或提出新功能建議？歡迎透過聯絡表單留言（可附上相關連結或說明），我們會在確認後盡快回覆與處理。">
   <meta name="keywords" content="聯絡,問題反饋,資料提供,新功能建議,黃庭筠">
   
   <!-- Canonical URL -->
@@ -17,9 +17,18 @@
   
   <!-- Open Graph -->
   <meta property="og:title" content="聯絡我們 - 黃庭筠互動網站">
-  <meta property="og:description" content="問題反饋、資料提供、新功能建議">
+  <meta property="og:description" content="遇到問題、想補充資訊或提出新功能建議？歡迎透過聯絡表單留言（可附上相關連結或說明），我們會在確認後盡快回覆與處理。">
   <meta property="og:url" content="https://tingyuun.github.io/contact.html">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://tingyuun.github.io/images/profiles/1.png">
+  <meta property="og:site_name" content="黃庭筠互動網站">
+  <meta property="og:locale" content="zh_TW">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="聯絡我們 - 黃庭筠互動網站">
+  <meta name="twitter:description" content="遇到問題、想補充資訊或提出新功能建議？歡迎透過聯絡表單留言（可附上相關連結或說明），我們會在確認後盡快回覆與處理。">
+  <meta name="twitter:image" content="https://tingyuun.github.io/images/profiles/1.png">
   
   <!-- 成人內容標記 -->
   <meta name="rating" content="adult">
@@ -245,7 +254,9 @@
           ✉️ 填寫表單
         </h2>
         
-        <form action="https://formspree.io/f/xjkjpeld" method="POST">
+        <form id="contact-form" action="#" method="POST" enctype="multipart/form-data" novalidate>
+          <!-- Honeypot (bots): humans should leave empty -->
+          <input type="text" name="website" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute; left:-9999px; width:1px; height:1px; opacity:0;">
           <div class="form-group">
             <label for="feedback-type" class="form-label">問題類型 *</label>
             <select id="feedback-type" name="type" class="form-select" required>
@@ -302,10 +313,20 @@
               class="form-input" 
               accept="image/*,video/*,.pdf,.zip"
             >
-            <small class="form-hint">支援圖片、影片、PDF、ZIP 檔案,最大 10MB</small>
+            <small class="form-hint" id="file-upload-hint">支援圖片、影片、PDF、ZIP 檔案；為確保 Google 雲端上傳穩定，建議 ≤ 7MB。更大的檔案請改貼雲端連結。</small>
           </div>
+
+          <div class="form-group" style="margin-top: 10px;">
+            <div id="form-status" role="status" aria-live="polite" aria-atomic="true" style="display:none; padding: 12px 14px; border-radius: 10px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: rgba(255,255,255,0.9);"></div>
+          </div>
+
+          <noscript>
+            <div style="margin-top: 10px; padding: 12px 14px; border-radius: 10px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255, 179, 179, 0.15); color: #ffb3b3;">
+              ⚠️ 送出表單需要啟用 JavaScript。
+            </div>
+          </noscript>
           
-          <button type="submit" class="submit-btn" onclick="gtag('event', 'form_submit', {event_category: 'Contact', event_label: 'Feedback_Form'});">
+          <button type="submit" class="submit-btn" id="contact-submit" onclick="if (typeof gtag === 'function') gtag('event', 'form_submit', {event_category: 'Contact', event_label: 'Feedback_Form'});">
             📤 送出表單
           </button>
           
@@ -360,7 +381,7 @@
       <div class="flag-counter" style="text-align: center; margin: 20px 0;">
         <a href="https://info.flagcounter.com/ckwX" target="_blank" rel="noopener">
           <img src="https://s01.flagcounter.com/count/ckwX/bg_FFFFFF/txt_000000/border_CCCCCC/columns_5/maxflags_10/viewers_cums/labels_0/pageviews_0/flags_0/percent_0/" 
-               alt="訪客統計" 
+            alt="訪客來源統計（FlagCounter）" 
                border="0"
                loading="lazy">
         </a>
@@ -370,6 +391,218 @@
 
   <!-- JavaScript -->
   <script defer src="js/common.js"></script>
+
+  <script>
+    (function () {
+      // Google Apps Script + base64 overhead => keep a conservative limit
+      const MAX_BYTES = 7 * 1024 * 1024;
+
+      // Replace with your Apps Script Web App URL
+      const CONTACT_UPLOAD_API = 'https://script.google.com/macros/s/AKfycbxQDIOu5f8dT5g4FJVI487n0MkZoYlxCaI1Z4XGKrdKP0oe3THtfEu_2EW3Ze5HnZlu3w/exec';
+
+      function formatSize(bytes) {
+        if (!Number.isFinite(bytes)) return '';
+        const mb = bytes / (1024 * 1024);
+        return mb.toFixed(2) + ' MB';
+      }
+
+      function setHint(el, message, isError) {
+        if (!el) return;
+        el.textContent = message;
+        el.style.color = isError ? '#ffb3b3' : 'rgba(255, 255, 255, 0.6)';
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('contact-form');
+        const fileInput = document.getElementById('feedback-file');
+        const hint = document.getElementById('file-upload-hint');
+        const statusEl = document.getElementById('form-status');
+        const submitBtn = document.getElementById('contact-submit');
+
+        if (!form || !fileInput) return;
+        if (!CONTACT_UPLOAD_API || CONTACT_UPLOAD_API.indexOf('REPLACE_WITH_') === 0) {
+          // Show a clear message so the page isn't misleading.
+          if (statusEl) {
+            statusEl.style.display = 'block';
+            statusEl.style.borderColor = 'rgba(255, 179, 179, 0.35)';
+            statusEl.style.color = '#ffb3b3';
+            statusEl.textContent = '⚠️ 聯絡表單尚未設定上傳端點（需要部署 Google Apps Script Web App）。';
+          }
+          return;
+        }
+
+        const defaultHint = hint ? hint.textContent : '';
+
+        function validateFile() {
+          const file = fileInput.files && fileInput.files[0];
+          if (!file) {
+            setHint(hint, defaultHint, false);
+            return { ok: true };
+          }
+          if (file.size > MAX_BYTES) {
+            setHint(
+              hint,
+              `附件過大（${formatSize(file.size)}），建議改用 ≤ 7MB 的檔案或改貼雲端連結。`,
+              true
+            );
+            return { ok: false };
+          }
+          setHint(hint, defaultHint, false);
+          return { ok: true };
+        }
+
+        function setStatus(message, isError, linkUrl) {
+          if (!statusEl) return;
+          statusEl.style.display = 'block';
+          statusEl.style.borderColor = isError
+            ? 'rgba(255, 179, 179, 0.35)'
+            : 'rgba(179, 255, 205, 0.25)';
+          statusEl.style.color = isError ? '#ffb3b3' : '#b3ffcd';
+          statusEl.textContent = '';
+          statusEl.appendChild(document.createTextNode(message));
+          if (linkUrl) {
+            statusEl.appendChild(document.createTextNode(' '));
+            const a = document.createElement('a');
+            a.href = linkUrl;
+            a.target = '_blank';
+            a.rel = 'noopener noreferrer';
+            a.style.color = 'rgba(255,255,255,0.95)';
+            a.style.textDecoration = 'underline';
+            a.textContent = '開啟附件連結';
+            statusEl.appendChild(a);
+          }
+        }
+
+        function parseJsonOrNull(text) {
+          try {
+            return JSON.parse(text);
+          } catch (_) {
+            return null;
+          }
+        }
+
+        function fileToBase64(file) {
+          return new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.onerror = () => reject(new Error('read_failed'));
+            reader.onload = () => {
+              const result = String(reader.result || '');
+              // data:[mime];base64,XXXX
+              const idx = result.indexOf('base64,');
+              if (idx === -1) return reject(new Error('base64_failed'));
+              resolve(result.slice(idx + 'base64,'.length));
+            };
+            reader.readAsDataURL(file);
+          });
+        }
+
+        fileInput.addEventListener('change', () => {
+          const res = validateFile();
+          if (!res.ok) fileInput.value = '';
+        });
+
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+
+          const res = validateFile();
+          if (!res.ok) return;
+
+          const type = (document.getElementById('feedback-type') || {}).value || '';
+          const title = (document.getElementById('feedback-title') || {}).value || '';
+          const message = (document.getElementById('feedback-message') || {}).value || '';
+          const email = (document.getElementById('feedback-email') || {}).value || '';
+          const website = (form.querySelector('input[name="website"]') || {}).value || '';
+
+          if (!type || !title || !message) {
+            setStatus('⚠️ 請先填寫必填欄位（問題類型、標題、詳細描述）。', true);
+            return;
+          }
+
+          const file = fileInput.files && fileInput.files[0];
+          let attachment = null;
+
+          try {
+            if (submitBtn) submitBtn.disabled = true;
+            if (fileInput) fileInput.disabled = true;
+            setStatus('⏳ 送出中…', false);
+
+            if (file) {
+              const base64 = await fileToBase64(file);
+              attachment = {
+                name: file.name,
+                type: file.type,
+                size: file.size,
+                base64
+              };
+            }
+
+            // Send as text/plain to avoid CORS preflight.
+            const payload = JSON.stringify({ type, title, message, email, website, attachment });
+
+            const controller = new AbortController();
+            const timeoutId = window.setTimeout(() => controller.abort(), 20000);
+
+            const resp = await fetch(CONTACT_UPLOAD_API, {
+              method: 'POST',
+              cache: 'no-store',
+              redirect: 'follow',
+              headers: {
+                'Content-Type': 'text/plain;charset=utf-8'
+              },
+              body: payload,
+              signal: controller.signal
+            }).finally(() => window.clearTimeout(timeoutId));
+
+            const contentType = String(resp.headers.get('content-type') || '').toLowerCase();
+            const rawText = await resp.text().catch(() => '');
+            const data = parseJsonOrNull(rawText);
+
+            if (!resp.ok) {
+              setStatus('❌ 送出失敗（服務回應異常），請稍後再試。', true);
+              return;
+            }
+
+            if (!data || data.ok !== true) {
+              // Apps Script may return HTML error pages (e.g. deployment not updated / permissions).
+              if (contentType.indexOf('text/html') !== -1 || rawText.indexOf('<html') !== -1) {
+                setStatus('❌ 送出失敗（服務端未回傳 JSON）。請確認 Apps Script 已部署為 Web App、權限為「任何人」，並重新部署最新版。', true);
+                return;
+              }
+
+              const errCode = data && data.error ? String(data.error) : '';
+              const msg = errCode === 'file_type_not_allowed'
+                ? '❌ 檔案類型不支援（僅圖片/影片/PDF/ZIP）。'
+                : errCode === 'file_too_large'
+                  ? '❌ 附件過大（建議 ≤ 7MB）。'
+                  : errCode === 'missing_required_fields'
+                    ? '❌ 缺少必填欄位，請檢查後再送出。'
+                    : errCode === 'server_not_configured'
+                      ? '❌ 服務端尚未設定（Drive 資料夾 ID 未填）。'
+                      : '❌ 送出失敗，請稍後再試；或改用「貼雲端連結」方式提供附件。';
+              setStatus(msg, true);
+              return;
+            }
+
+            if (data.fileUrl) {
+              setStatus('✅ 已送出！附件已上傳到 Google 雲端。', false, String(data.fileUrl));
+            } else {
+              setStatus('✅ 已送出！我們會盡快處理你的反饋。', false);
+            }
+            form.reset();
+            setHint(hint, defaultHint, false);
+          } catch (err) {
+            const aborted = err && String(err.name || '') === 'AbortError';
+            setStatus(aborted
+              ? '❌ 送出逾時（20 秒）。請檢查網路或稍後再試。'
+              : '❌ 送出失敗（網路或服務異常），請稍後再試。', true);
+          } finally {
+            if (submitBtn) submitBtn.disabled = false;
+            if (fileInput) fileInput.disabled = false;
+          }
+        });
+      });
+    })();
+  </script>
   
   <!-- AddToAny 分享按鈕腳本 -->
   <script async src="https://static.addtoany.com/menu/page.js"></script>

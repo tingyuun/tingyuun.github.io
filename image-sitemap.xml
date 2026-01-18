@@ -1,179 +1,267 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  
   <url>
-    <loc>https://tingyuun.github.io/gallery.html</loc>
+    <loc>https://tingyuun.github.io/</loc>
+    <lastmod>2026-01-19</lastmod>
     <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/1.webp</image:loc>
-      <image:title>黃庭筠外流照片 1</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/3.webp</image:loc>
-      <image:title>黃庭筠外流照片 3</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/2.webp</image:loc>
-      <image:title>黃庭筠外流照片 2</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/6.webp</image:loc>
-      <image:title>黃庭筠外流照片 6</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/7.webp</image:loc>
-      <image:title>黃庭筠外流照片 7</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/5.webp</image:loc>
-      <image:title>黃庭筠外流照片 5</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/4.webp</image:loc>
-      <image:title>黃庭筠外流照片 4</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/10.webp</image:loc>
-      <image:title>黃庭筠外流照片 10</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/11.webp</image:loc>
-      <image:title>黃庭筠外流照片 11</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/13.webp</image:loc>
-      <image:title>黃庭筠外流照片 13</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/12.webp</image:loc>
-      <image:title>黃庭筠外流照片 12</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/14.webp</image:loc>
-      <image:title>黃庭筠外流照片 14</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/9.webp</image:loc>
-      <image:title>黃庭筠外流照片 9</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/8.webp</image:loc>
-      <image:title>黃庭筠外流照片 8</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/1.png</image:loc>
-      <image:title>世新大學黃庭筠照片 1</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/10.png</image:loc>
-      <image:title>世新大學黃庭筠照片 10</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/11.png</image:loc>
-      <image:title>世新大學黃庭筠照片 11</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/12.png</image:loc>
-      <image:title>世新大學黃庭筠照片 12</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/13.png</image:loc>
-      <image:title>世新大學黃庭筠照片 13</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/14.png</image:loc>
-      <image:title>世新大學黃庭筠照片 14</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/2.png</image:loc>
-      <image:title>世新大學黃庭筠照片 2</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/3.png</image:loc>
-      <image:title>世新大學黃庭筠照片 3</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/4.png</image:loc>
-      <image:title>世新大學黃庭筠照片 4</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/5.png</image:loc>
-      <image:title>世新大學黃庭筠照片 5</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/6.png</image:loc>
-      <image:title>世新大學黃庭筠照片 6</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/7.png</image:loc>
-      <image:title>世新大學黃庭筠照片 7</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/8.png</image:loc>
-      <image:title>世新大學黃庭筠照片 8</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/cum/9.png</image:loc>
-      <image:title>世新大學黃庭筠照片 9</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/profiles/4.jpeg</image:loc>
-      <image:title>黃庭筠自拍照</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/profiles/6.jpg</image:loc>
-      <image:title>黃庭筠生活照</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/profiles/5.jpg</image:loc>
-      <image:title>黃庭筠生活照 2</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/profiles/3.png</image:loc>
-      <image:title>黃庭筠個人資料照片 3</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/profiles/2.png</image:loc>
-      <image:title>黃庭筠個人資料照片 2</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/profiles/1.png</image:loc>
-      <image:title>黃庭筠個人資料照片 1</image:title>
+      <image:loc>https://tingyuun.github.io/images/favicon.png</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://tingyuun.github.io/images/profiles/1.webp</image:loc>
-      <image:title>黃庭筠照片 webp 1</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://tingyuun.github.io/images/profiles/3.webp</image:loc>
-      <image:title>黃庭筠照片 webp 3</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/profiles/2.webp</image:loc>
-      <image:title>黃庭筠照片 webp 2</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/profiles/6.webp</image:loc>
-      <image:title>黃庭筠照片 webp 6</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/profiles/5.webp</image:loc>
-      <image:title>黃庭筠照片 webp 5</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://tingyuun.github.io/images/profiles/4.webp</image:loc>
-      <image:title>黃庭筠照片 webp 4</image:title>
+      <image:loc>https://tingyuun.github.io/images/help/student_id.jpg</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://tingyuun.github.io/about.html</loc>
+    <lastmod>2026-01-19</lastmod>
     <image:image>
-      <image:loc>https://tingyuun.github.io/images/help/student_id.jpg</image:loc>
-      <image:title>黃庭筠學生證</image:title>
+      <image:loc>https://tingyuun.github.io/images/favicon.png</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://tingyuun.github.io/images/help/student_id.webp</image:loc>
-      <image:title>黃庭筠學生證 webp</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tingyuun.github.io/contact.html</loc>
+    <lastmod>2026-01-19</lastmod>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/images/favicon.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tingyuun.github.io/disclaimer.html</loc>
+    <lastmod>2026-01-19</lastmod>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/images/favicon.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tingyuun.github.io/faq.html</loc>
+    <lastmod>2026-01-19</lastmod>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/images/favicon.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tingyuun.github.io/gallery.html</loc>
+    <lastmod>2026-01-19</lastmod>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/images/favicon.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/images/profiles/1.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/images/profiles/2.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/images/profiles/3.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/images/profiles/4.jpeg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/images/profiles/5.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/images/profiles/6.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/images/help/student_id.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_001.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_001.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_002.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_002.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_003.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_003.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_004.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_004.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_005.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_005.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_006.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_006.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_007.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_007.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_008.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_008.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_009.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_009.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_010.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_010.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_011.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_011.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_012.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_012.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_013.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_013.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_014.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_014.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_015.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_015.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_016.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_016.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_017.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_017.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_018.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_018.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_019.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_019.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_020.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_020.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_021.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_021.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_022.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_022.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_023.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_023.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_024.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_024.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_025.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_025.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_026.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_026.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_027.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_027.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_028.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_028.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_029.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_029.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/images/profiles/1.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tingyuun.github.io/resources.html</loc>
+    <lastmod>2026-01-19</lastmod>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/images/favicon.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tingyuun.github.io/story.html</loc>
+    <lastmod>2026-01-19</lastmod>
+    <image:image>
+      <image:loc>https://tingyuun.github.io/images/favicon.png</image:loc>
     </image:image>
   </url>
 </urlset>
