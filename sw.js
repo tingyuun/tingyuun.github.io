@@ -1,5 +1,5 @@
 // Service Worker for 黃庭筠互動網站
-const CACHE_VERSION = 'v1.1.0';
+const CACHE_VERSION = 'v1.1.1';
 const CACHE_NAME = `tingyuun-cache-${CACHE_VERSION}`;
 
 // 需要快取的核心資源
@@ -42,7 +42,7 @@ const IMAGE_ASSETS = [
   '/images/cum/6.webp',
   '/images/cum/7.webp',
   '/images/cum/8.webp',
-  '/images/cum_9.webp',
+  '/images/cum/9.webp',
   '/images/cum/10.webp',
   '/images/cum/11.webp',
   '/images/cum/12.webp',
@@ -99,6 +99,24 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const { request } = event;
   const url = new URL(request.url);
+  
+  // 排除第三方 API 請求（不快取，直接透過網路）
+  const excludedDomains = [
+    'flagcounter.com',
+    'www.google-analytics.com',
+    'www.googletagmanager.com',
+    'static.addtoany.com',
+    's7.addtoany.com',
+    // Google Apps Script Web App（下載計數）
+    'script.google.com',
+    'script.googleusercontent.com'
+  ];
+  
+  if (excludedDomains.some(domain => url.hostname.includes(domain))) {
+    // 直接發送網路請求，不使用快取
+    event.respondWith(fetch(request));
+    return;
+  }
   
   // 只處理同源請求
   if (url.origin !== location.origin) {
