@@ -133,6 +133,34 @@
       gap: 20px;
       margin: 30px 0;
     }
+
+    /* 爬蟲可見縮圖：提高圖片可發現性（避免只依賴點擊/JS） */
+    .thumb-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 10px;
+      margin: 18px 0 6px;
+    }
+
+    .thumb-grid a {
+      display: block;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease;
+    }
+
+    .thumb-grid a:hover {
+      transform: translateY(-2px);
+    }
+
+    .thumb-grid img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      display: block;
+      background: #111;
+    }
     
     .gallery-item {
       position: relative;
@@ -265,6 +293,15 @@
       
       .gallery-item img {
         height: 200px;
+      }
+
+      .thumb-grid {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+        gap: 8px;
+      }
+
+      .thumb-grid img {
+        height: 100px;
       }
     }
     
@@ -583,35 +620,35 @@
           {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/images/profiles/5.jpg", "name": "黃庭筠照片 5"},
           {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/images/profiles/6.jpg", "name": "黃庭筠照片 6"},
           {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/images/help/student_id.jpg", "name": "黃庭筠學生證"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_001.webp", "name": "黃庭筠 TWZP1155 照片 1"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_002.webp", "name": "黃庭筠 TWZP1155 照片 2"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_003.webp", "name": "黃庭筠 TWZP1155 照片 3"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_004.webp", "name": "黃庭筠 TWZP1155 照片 4"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_005.webp", "name": "黃庭筠 TWZP1155 照片 5"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_006.webp", "name": "黃庭筠 TWZP1155 照片 6"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_007.webp", "name": "黃庭筠 TWZP1155 照片 7"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_008.webp", "name": "黃庭筠 TWZP1155 照片 8"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_009.webp", "name": "黃庭筠 TWZP1155 照片 9"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_010.webp", "name": "黃庭筠 TWZP1155 照片 10"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_011.webp", "name": "黃庭筠 TWZP1155 照片 11"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_012.webp", "name": "黃庭筠 TWZP1155 照片 12"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_013.webp", "name": "黃庭筠 TWZP1155 照片 13"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_014.webp", "name": "黃庭筠 TWZP1155 照片 14"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_015.webp", "name": "黃庭筠 TWZP1155 照片 15"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_016.webp", "name": "黃庭筠 TWZP1155 照片 16"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_017.webp", "name": "黃庭筠 TWZP1155 照片 17"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_018.webp", "name": "黃庭筠 TWZP1155 照片 18"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_019.webp", "name": "黃庭筠 TWZP1155 照片 19"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_020.webp", "name": "黃庭筠 TWZP1155 照片 20"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_021.webp", "name": "黃庭筠 TWZP1155 照片 21"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_022.webp", "name": "黃庭筠 TWZP1155 照片 22"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_023.webp", "name": "黃庭筠 TWZP1155 照片 23"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_024.webp", "name": "黃庭筠 TWZP1155 照片 24"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_025.webp", "name": "黃庭筠 TWZP1155 照片 25"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_026.webp", "name": "黃庭筠 TWZP1155 照片 26"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_027.webp", "name": "黃庭筠 TWZP1155 照片 27"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_028.webp", "name": "黃庭筠 TWZP1155 照片 28"},
-          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/P/twzp1155_img_029.webp", "name": "黃庭筠 TWZP1155 照片 29"}
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_001.webp", "name": "黃庭筠 TWZP1155 照片 1"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_002.webp", "name": "黃庭筠 TWZP1155 照片 2"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_003.webp", "name": "黃庭筠 TWZP1155 照片 3"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_004.webp", "name": "黃庭筠 TWZP1155 照片 4"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_005.webp", "name": "黃庭筠 TWZP1155 照片 5"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_006.webp", "name": "黃庭筠 TWZP1155 照片 6"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_007.webp", "name": "黃庭筠 TWZP1155 照片 7"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_008.webp", "name": "黃庭筠 TWZP1155 照片 8"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_009.webp", "name": "黃庭筠 TWZP1155 照片 9"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_010.webp", "name": "黃庭筠 TWZP1155 照片 10"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_011.webp", "name": "黃庭筠 TWZP1155 照片 11"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_012.webp", "name": "黃庭筠 TWZP1155 照片 12"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_013.webp", "name": "黃庭筠 TWZP1155 照片 13"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_014.webp", "name": "黃庭筠 TWZP1155 照片 14"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_015.webp", "name": "黃庭筠 TWZP1155 照片 15"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_016.webp", "name": "黃庭筠 TWZP1155 照片 16"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_017.webp", "name": "黃庭筠 TWZP1155 照片 17"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_018.webp", "name": "黃庭筠 TWZP1155 照片 18"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_019.webp", "name": "黃庭筠 TWZP1155 照片 19"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_020.webp", "name": "黃庭筠 TWZP1155 照片 20"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_021.webp", "name": "黃庭筠 TWZP1155 照片 21"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_022.webp", "name": "黃庭筠 TWZP1155 照片 22"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_023.webp", "name": "黃庭筠 TWZP1155 照片 23"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_024.webp", "name": "黃庭筠 TWZP1155 照片 24"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_025.webp", "name": "黃庭筠 TWZP1155 照片 25"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_026.webp", "name": "黃庭筠 TWZP1155 照片 26"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_027.webp", "name": "黃庭筠 TWZP1155 照片 27"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_028.webp", "name": "黃庭筠 TWZP1155 照片 28"},
+          {"@type": "ImageObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_029.webp", "name": "黃庭筠 TWZP1155 照片 29"}
         ]
       },
       {
@@ -620,14 +657,14 @@
         "name": "黃庭筠完整影片",
         "description": "收錄黃庭筠8支精彩影片",
         "video": [
-          {"@type": "VideoObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/V/twzp1155_vid_001.mp4", "name": "黃庭筠影片 1", "description": "黃庭筠私密影片 1"},
-          {"@type": "VideoObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/V/twzp1155_vid_002.mp4", "name": "黃庭筠影片 2", "description": "黃庭筠私密影片 2"},
-          {"@type": "VideoObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/V/twzp1155_vid_003.mp4", "name": "黃庭筠影片 3", "description": "黃庭筠私密影片 3"},
-          {"@type": "VideoObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/V/twzp1155_vid_004.mp4", "name": "黃庭筠影片 4", "description": "黃庭筠私密影片 4"},
-          {"@type": "VideoObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/V/twzp1155_vid_005.mp4", "name": "黃庭筠影片 5", "description": "黃庭筠私密影片 5"},
-          {"@type": "VideoObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/V/twzp1155_vid_006.mp4", "name": "黃庭筠影片 6", "description": "黃庭筠私密影片 6"},
-          {"@type": "VideoObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/V/twzp1155_vid_007.mp4", "name": "黃庭筠影片 7", "description": "黃庭筠私密影片 7"},
-          {"@type": "VideoObject", "contentUrl": "https://tingyuun.github.io/TWZP 1155 加料/V/twzp1155_vid_008.mp4", "name": "黃庭筠影片 8", "description": "黃庭筠私密影片 8"}
+          {"@type": "VideoObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/V/twzp1155_vid_001.mp4", "name": "黃庭筠影片 1", "description": "黃庭筠私密影片 1"},
+          {"@type": "VideoObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/V/twzp1155_vid_002.mp4", "name": "黃庭筠影片 2", "description": "黃庭筠私密影片 2"},
+          {"@type": "VideoObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/V/twzp1155_vid_003.mp4", "name": "黃庭筠影片 3", "description": "黃庭筠私密影片 3"},
+          {"@type": "VideoObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/V/twzp1155_vid_004.mp4", "name": "黃庭筠影片 4", "description": "黃庭筠私密影片 4"},
+          {"@type": "VideoObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/V/twzp1155_vid_005.mp4", "name": "黃庭筠影片 5", "description": "黃庭筠私密影片 5"},
+          {"@type": "VideoObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/V/twzp1155_vid_006.mp4", "name": "黃庭筠影片 6", "description": "黃庭筠私密影片 6"},
+          {"@type": "VideoObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/V/twzp1155_vid_007.mp4", "name": "黃庭筠影片 7", "description": "黃庭筠私密影片 7"},
+          {"@type": "VideoObject", "contentUrl": "https://tingyuun.github.io/TWZP%201155%20%E5%8A%A0%E6%96%99/V/twzp1155_vid_008.mp4", "name": "黃庭筠影片 8", "description": "黃庭筠私密影片 8"}
         ]
       }
     ]
@@ -2603,6 +2640,41 @@
     <p class="page-subtitle">世新大學傳播系美照 | 高清寫真圖片</p>
 
     <div class="content-card fade-in">
+      <h2>🔎 精選縮圖（搜尋引擎可見）</h2>
+      <p>下方縮圖為靜態 <code>&lt;img&gt;</code>，並使用正確 percent-encoding 的路徑，讓 Google 圖片更容易發現與抓取。</p>
+
+      <div class="thumb-grid" aria-label="TWZP 1155 精選縮圖">
+        <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_001.webp"><img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_001.webp" alt="黃庭筠 TWZP 1155 照片 001 縮圖" width="800" height="600" decoding="async" loading="eager" fetchpriority="high"></a>
+        <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_002.webp"><img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_002.webp" alt="黃庭筠 TWZP 1155 照片 002 縮圖" width="800" height="600" decoding="async" loading="eager" fetchpriority="high"></a>
+        <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_003.webp"><img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_003.webp" alt="黃庭筠 TWZP 1155 照片 003 縮圖" width="800" height="600" decoding="async" loading="eager"></a>
+        <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_004.webp"><img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_004.webp" alt="黃庭筠 TWZP 1155 照片 004 縮圖" width="800" height="600" decoding="async" loading="eager"></a>
+        <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_005.webp"><img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_005.webp" alt="黃庭筠 TWZP 1155 照片 005 縮圖" width="800" height="600" decoding="async" loading="eager"></a>
+        <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_006.webp"><img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_006.webp" alt="黃庭筠 TWZP 1155 照片 006 縮圖" width="800" height="600" decoding="async" loading="eager"></a>
+
+        <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_007.webp"><img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_007.webp" alt="黃庭筠 TWZP 1155 照片 007 縮圖" width="800" height="600" decoding="async" loading="lazy"></a>
+        <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_008.webp"><img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_008.webp" alt="黃庭筠 TWZP 1155 照片 008 縮圖" width="800" height="600" decoding="async" loading="lazy"></a>
+        <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_009.webp"><img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_009.webp" alt="黃庭筠 TWZP 1155 照片 009 縮圖" width="800" height="600" decoding="async" loading="lazy"></a>
+        <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_010.webp"><img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_010.webp" alt="黃庭筠 TWZP 1155 照片 010 縮圖" width="800" height="600" decoding="async" loading="lazy"></a>
+        <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_011.webp"><img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_011.webp" alt="黃庭筠 TWZP 1155 照片 011 縮圖" width="800" height="600" decoding="async" loading="lazy"></a>
+        <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_012.webp"><img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_012.webp" alt="黃庭筠 TWZP 1155 照片 012 縮圖" width="800" height="600" decoding="async" loading="lazy"></a>
+
+        <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_013.webp"><img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_013.webp" alt="黃庭筠 TWZP 1155 照片 013 縮圖" width="800" height="600" decoding="async" loading="lazy"></a>
+        <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_014.webp"><img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_014.webp" alt="黃庭筠 TWZP 1155 照片 014 縮圖" width="800" height="600" decoding="async" loading="lazy"></a>
+        <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_015.webp"><img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_015.webp" alt="黃庭筠 TWZP 1155 照片 015 縮圖" width="800" height="600" decoding="async" loading="lazy"></a>
+        <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_016.webp"><img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_016.webp" alt="黃庭筠 TWZP 1155 照片 016 縮圖" width="800" height="600" decoding="async" loading="lazy"></a>
+        <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_017.webp"><img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_017.webp" alt="黃庭筠 TWZP 1155 照片 017 縮圖" width="800" height="600" decoding="async" loading="lazy"></a>
+        <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_018.webp"><img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_018.webp" alt="黃庭筠 TWZP 1155 照片 018 縮圖" width="800" height="600" decoding="async" loading="lazy"></a>
+
+        <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_019.webp"><img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_019.webp" alt="黃庭筠 TWZP 1155 照片 019 縮圖" width="800" height="600" decoding="async" loading="lazy"></a>
+        <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_020.webp"><img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_020.webp" alt="黃庭筠 TWZP 1155 照片 020 縮圖" width="800" height="600" decoding="async" loading="lazy"></a>
+        <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_021.webp"><img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_021.webp" alt="黃庭筠 TWZP 1155 照片 021 縮圖" width="800" height="600" decoding="async" loading="lazy"></a>
+        <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_022.webp"><img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_022.webp" alt="黃庭筠 TWZP 1155 照片 022 縮圖" width="800" height="600" decoding="async" loading="lazy"></a>
+        <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_023.webp"><img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_023.webp" alt="黃庭筠 TWZP 1155 照片 023 縮圖" width="800" height="600" decoding="async" loading="lazy"></a>
+        <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_024.webp"><img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_024.webp" alt="黃庭筠 TWZP 1155 照片 024 縮圖" width="800" height="600" decoding="async" loading="lazy"></a>
+      </div>
+    </div>
+
+    <div class="content-card fade-in">
       <h2>📸 完整相冊（36張）</h2>
       <p>收錄黃庭筠各時期照片，點擊圖片可放大查看高清原圖。點擊下載按鈕可下載未壓縮原始版本。</p>
       
@@ -2718,9 +2790,9 @@
           <a href="images/help/student_id.jpg" download="tingyuun_student_id.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('student_id'); gtag('event', 'file_download', {file_name: 'tingyuun_student_id.jpg', file_type: 'student_id', item_id: 'student_id'});">📥 下載</a>
         </div>
         
-        <!-- TWZP 1155 加料系列 -->
+        <!-- TWZP%201155%20%E5%8A%A0%E6%96%99系列 -->
         <div class="gallery-item" data-index="7">
-          <img src="TWZP 1155 加料/P/twzp1155_img_001.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 001" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_001.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 001" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #1</div>
             <small>點擊放大</small>
@@ -2728,11 +2800,11 @@
               <span id="twzp_001-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_001.jpg" download="tingyuun_twzp_001.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_001'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_001.jpg', file_type: 'twzp_photo', item_id: 'twzp_001'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_001.jpg" download="tingyuun_twzp_001.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_001'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_001.jpg', file_type: 'twzp_photo', item_id: 'twzp_001'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="8">
-          <img src="TWZP 1155 加料/P/twzp1155_img_002.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 002" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_002.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 002" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #2</div>
             <small>點擊放大</small>
@@ -2740,11 +2812,11 @@
               <span id="twzp_002-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_002.jpg" download="tingyuun_twzp_002.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_002'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_002.jpg', file_type: 'twzp_photo', item_id: 'twzp_002'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_002.jpg" download="tingyuun_twzp_002.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_002'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_002.jpg', file_type: 'twzp_photo', item_id: 'twzp_002'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="9">
-          <img src="TWZP 1155 加料/P/twzp1155_img_003.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 003" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_003.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 003" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #3</div>
             <small>點擊放大</small>
@@ -2752,11 +2824,11 @@
               <span id="twzp_003-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_003.jpg" download="tingyuun_twzp_003.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_003'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_003.jpg', file_type: 'twzp_photo', item_id: 'twzp_003'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_003.jpg" download="tingyuun_twzp_003.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_003'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_003.jpg', file_type: 'twzp_photo', item_id: 'twzp_003'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="10">
-          <img src="TWZP 1155 加料/P/twzp1155_img_004.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 004" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_004.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 004" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #4</div>
             <small>點擊放大</small>
@@ -2764,11 +2836,11 @@
               <span id="twzp_004-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_004.jpg" download="tingyuun_twzp_004.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_004'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_004.jpg', file_type: 'twzp_photo', item_id: 'twzp_004'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_004.jpg" download="tingyuun_twzp_004.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_004'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_004.jpg', file_type: 'twzp_photo', item_id: 'twzp_004'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="11">
-          <img src="TWZP 1155 加料/P/twzp1155_img_005.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 005" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_005.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 005" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #5</div>
             <small>點擊放大</small>
@@ -2776,11 +2848,11 @@
               <span id="twzp_005-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_005.jpg" download="tingyuun_twzp_005.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_005'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_005.jpg', file_type: 'twzp_photo', item_id: 'twzp_005'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_005.jpg" download="tingyuun_twzp_005.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_005'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_005.jpg', file_type: 'twzp_photo', item_id: 'twzp_005'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="12">
-          <img src="TWZP 1155 加料/P/twzp1155_img_006.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 006" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_006.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 006" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #6</div>
             <small>點擊放大</small>
@@ -2788,11 +2860,11 @@
               <span id="twzp_006-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_006.jpg" download="tingyuun_twzp_006.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_006'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_006.jpg', file_type: 'twzp_photo', item_id: 'twzp_006'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_006.jpg" download="tingyuun_twzp_006.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_006'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_006.jpg', file_type: 'twzp_photo', item_id: 'twzp_006'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="13">
-          <img src="TWZP 1155 加料/P/twzp1155_img_007.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 007" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_007.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 007" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #7</div>
             <small>點擊放大</small>
@@ -2800,11 +2872,11 @@
               <span id="twzp_007-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_007.jpg" download="tingyuun_twzp_007.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_007'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_007.jpg', file_type: 'twzp_photo', item_id: 'twzp_007'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_007.jpg" download="tingyuun_twzp_007.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_007'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_007.jpg', file_type: 'twzp_photo', item_id: 'twzp_007'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="14">
-          <img src="TWZP 1155 加料/P/twzp1155_img_008.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 008" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_008.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 008" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #8</div>
             <small>點擊放大</small>
@@ -2812,11 +2884,11 @@
               <span id="twzp_008-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_008.jpg" download="tingyuun_twzp_008.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_008'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_008.jpg', file_type: 'twzp_photo', item_id: 'twzp_008'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_008.jpg" download="tingyuun_twzp_008.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_008'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_008.jpg', file_type: 'twzp_photo', item_id: 'twzp_008'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="15">
-          <img src="TWZP 1155 加料/P/twzp1155_img_009.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 009" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_009.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 009" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #9</div>
             <small>點擊放大</small>
@@ -2824,11 +2896,11 @@
               <span id="twzp_009-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_009.jpg" download="tingyuun_twzp_009.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_009'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_009.jpg', file_type: 'twzp_photo', item_id: 'twzp_009'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_009.jpg" download="tingyuun_twzp_009.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_009'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_009.jpg', file_type: 'twzp_photo', item_id: 'twzp_009'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="16">
-          <img src="TWZP 1155 加料/P/twzp1155_img_010.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 010" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_010.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 010" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #10</div>
             <small>點擊放大</small>
@@ -2836,11 +2908,11 @@
               <span id="twzp_010-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_010.jpg" download="tingyuun_twzp_010.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_010'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_010.jpg', file_type: 'twzp_photo', item_id: 'twzp_010'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_010.jpg" download="tingyuun_twzp_010.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_010'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_010.jpg', file_type: 'twzp_photo', item_id: 'twzp_010'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="17">
-          <img src="TWZP 1155 加料/P/twzp1155_img_011.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 011" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_011.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 011" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #11</div>
             <small>點擊放大</small>
@@ -2848,11 +2920,11 @@
               <span id="twzp_011-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_011.jpg" download="tingyuun_twzp_011.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_011'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_011.jpg', file_type: 'twzp_photo', item_id: 'twzp_011'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_011.jpg" download="tingyuun_twzp_011.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_011'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_011.jpg', file_type: 'twzp_photo', item_id: 'twzp_011'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="18">
-          <img src="TWZP 1155 加料/P/twzp1155_img_012.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 012" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_012.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 012" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #12</div>
             <small>點擊放大</small>
@@ -2860,11 +2932,11 @@
               <span id="twzp_012-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_012.jpg" download="tingyuun_twzp_012.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_012'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_012.jpg', file_type: 'twzp_photo', item_id: 'twzp_012'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_012.jpg" download="tingyuun_twzp_012.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_012'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_012.jpg', file_type: 'twzp_photo', item_id: 'twzp_012'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="19">
-          <img src="TWZP 1155 加料/P/twzp1155_img_013.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 013" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_013.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 013" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #13</div>
             <small>點擊放大</small>
@@ -2872,11 +2944,11 @@
               <span id="twzp_013-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_013.jpg" download="tingyuun_twzp_013.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_013'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_013.jpg', file_type: 'twzp_photo', item_id: 'twzp_013'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_013.jpg" download="tingyuun_twzp_013.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_013'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_013.jpg', file_type: 'twzp_photo', item_id: 'twzp_013'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="20">
-          <img src="TWZP 1155 加料/P/twzp1155_img_014.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 014" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_014.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 014" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #14</div>
             <small>點擊放大</small>
@@ -2884,11 +2956,11 @@
               <span id="twzp_014-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_014.jpg" download="tingyuun_twzp_014.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_014'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_014.jpg', file_type: 'twzp_photo', item_id: 'twzp_014'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_014.jpg" download="tingyuun_twzp_014.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_014'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_014.jpg', file_type: 'twzp_photo', item_id: 'twzp_014'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="21">
-          <img src="TWZP 1155 加料/P/twzp1155_img_015.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 015" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_015.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 015" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #15</div>
             <small>點擊放大</small>
@@ -2896,11 +2968,11 @@
               <span id="twzp_015-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_015.jpg" download="tingyuun_twzp_015.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_015'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_015.jpg', file_type: 'twzp_photo', item_id: 'twzp_015'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_015.jpg" download="tingyuun_twzp_015.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_015'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_015.jpg', file_type: 'twzp_photo', item_id: 'twzp_015'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="22">
-          <img src="TWZP 1155 加料/P/twzp1155_img_016.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 016" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_016.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 016" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #16</div>
             <small>點擊放大</small>
@@ -2908,11 +2980,11 @@
               <span id="twzp_016-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_016.jpg" download="tingyuun_twzp_016.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_016'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_016.jpg', file_type: 'twzp_photo', item_id: 'twzp_016'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_016.jpg" download="tingyuun_twzp_016.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_016'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_016.jpg', file_type: 'twzp_photo', item_id: 'twzp_016'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="23">
-          <img src="TWZP 1155 加料/P/twzp1155_img_017.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 017" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_017.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 017" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #17</div>
             <small>點擊放大</small>
@@ -2920,11 +2992,11 @@
               <span id="twzp_017-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_017.jpg" download="tingyuun_twzp_017.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_017'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_017.jpg', file_type: 'twzp_photo', item_id: 'twzp_017'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_017.jpg" download="tingyuun_twzp_017.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_017'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_017.jpg', file_type: 'twzp_photo', item_id: 'twzp_017'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="24">
-          <img src="TWZP 1155 加料/P/twzp1155_img_018.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 018" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_018.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 018" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #18</div>
             <small>點擊放大</small>
@@ -2932,11 +3004,11 @@
               <span id="twzp_018-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_018.jpg" download="tingyuun_twzp_018.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_018'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_018.jpg', file_type: 'twzp_photo', item_id: 'twzp_018'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_018.jpg" download="tingyuun_twzp_018.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_018'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_018.jpg', file_type: 'twzp_photo', item_id: 'twzp_018'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="25">
-          <img src="TWZP 1155 加料/P/twzp1155_img_019.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 019" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_019.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 019" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #19</div>
             <small>點擊放大</small>
@@ -2944,11 +3016,11 @@
               <span id="twzp_019-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_019.jpg" download="tingyuun_twzp_019.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_019'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_019.jpg', file_type: 'twzp_photo', item_id: 'twzp_019'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_019.jpg" download="tingyuun_twzp_019.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_019'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_019.jpg', file_type: 'twzp_photo', item_id: 'twzp_019'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="26">
-          <img src="TWZP 1155 加料/P/twzp1155_img_020.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 020" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_020.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 020" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #20</div>
             <small>點擊放大</small>
@@ -2956,11 +3028,11 @@
               <span id="twzp_020-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_020.jpg" download="tingyuun_twzp_020.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_020'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_020.jpg', file_type: 'twzp_photo', item_id: 'twzp_020'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_020.jpg" download="tingyuun_twzp_020.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_020'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_020.jpg', file_type: 'twzp_photo', item_id: 'twzp_020'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="27">
-          <img src="TWZP 1155 加料/P/twzp1155_img_021.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 021" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_021.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 021" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #21</div>
             <small>點擊放大</small>
@@ -2968,11 +3040,11 @@
               <span id="twzp_021-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_021.jpg" download="tingyuun_twzp_021.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_021'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_021.jpg', file_type: 'twzp_photo', item_id: 'twzp_021'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_021.jpg" download="tingyuun_twzp_021.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_021'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_021.jpg', file_type: 'twzp_photo', item_id: 'twzp_021'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="28">
-          <img src="TWZP 1155 加料/P/twzp1155_img_022.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 022" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_022.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 022" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #22</div>
             <small>點擊放大</small>
@@ -2980,11 +3052,11 @@
               <span id="twzp_022-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_022.jpg" download="tingyuun_twzp_022.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_022'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_022.jpg', file_type: 'twzp_photo', item_id: 'twzp_022'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_022.jpg" download="tingyuun_twzp_022.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_022'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_022.jpg', file_type: 'twzp_photo', item_id: 'twzp_022'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="29">
-          <img src="TWZP 1155 加料/P/twzp1155_img_023.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 023" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_023.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 023" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #23</div>
             <small>點擊放大</small>
@@ -2992,11 +3064,11 @@
               <span id="twzp_023-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_023.jpg" download="tingyuun_twzp_023.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_023'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_023.jpg', file_type: 'twzp_photo', item_id: 'twzp_023'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_023.jpg" download="tingyuun_twzp_023.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_023'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_023.jpg', file_type: 'twzp_photo', item_id: 'twzp_023'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="30">
-          <img src="TWZP 1155 加料/P/twzp1155_img_024.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 024" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_024.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 024" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #24</div>
             <small>點擊放大</small>
@@ -3004,11 +3076,11 @@
               <span id="twzp_024-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_024.jpg" download="tingyuun_twzp_024.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_024'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_024.jpg', file_type: 'twzp_photo', item_id: 'twzp_024'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_024.jpg" download="tingyuun_twzp_024.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_024'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_024.jpg', file_type: 'twzp_photo', item_id: 'twzp_024'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="31">
-          <img src="TWZP 1155 加料/P/twzp1155_img_025.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 025" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_025.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 025" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #25</div>
             <small>點擊放大</small>
@@ -3016,11 +3088,11 @@
               <span id="twzp_025-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_025.jpg" download="tingyuun_twzp_025.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_025'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_025.jpg', file_type: 'twzp_photo', item_id: 'twzp_025'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_025.jpg" download="tingyuun_twzp_025.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_025'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_025.jpg', file_type: 'twzp_photo', item_id: 'twzp_025'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="32">
-          <img src="TWZP 1155 加料/P/twzp1155_img_026.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 026" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_026.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 026" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #26</div>
             <small>點擊放大</small>
@@ -3028,11 +3100,11 @@
               <span id="twzp_026-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_026.jpg" download="tingyuun_twzp_026.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_026'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_026.jpg', file_type: 'twzp_photo', item_id: 'twzp_026'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_026.jpg" download="tingyuun_twzp_026.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_026'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_026.jpg', file_type: 'twzp_photo', item_id: 'twzp_026'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="33">
-          <img src="TWZP 1155 加料/P/twzp1155_img_027.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 027" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_027.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 027" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #27</div>
             <small>點擊放大</small>
@@ -3040,11 +3112,11 @@
               <span id="twzp_027-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_027.jpg" download="tingyuun_twzp_027.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_027'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_027.jpg', file_type: 'twzp_photo', item_id: 'twzp_027'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_027.jpg" download="tingyuun_twzp_027.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_027'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_027.jpg', file_type: 'twzp_photo', item_id: 'twzp_027'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="34">
-          <img src="TWZP 1155 加料/P/twzp1155_img_028.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 028" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_028.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 028" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #28</div>
             <small>點擊放大</small>
@@ -3052,11 +3124,11 @@
               <span id="twzp_028-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_028.jpg" download="tingyuun_twzp_028.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_028'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_028.jpg', file_type: 'twzp_photo', item_id: 'twzp_028'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_028.jpg" download="tingyuun_twzp_028.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_028'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_028.jpg', file_type: 'twzp_photo', item_id: 'twzp_028'});">📥 下載</a>
         </div>
         
         <div class="gallery-item" data-index="35">
-          <img src="TWZP 1155 加料/P/twzp1155_img_029.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 029" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
+          <img src="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_029.webp" loading="lazy" alt="黃庭筠照片集（1155）- 圖片 029" title="黃庭筠高清照片 1155 | 世新大學傳播系 | 免費在線觀看" width="800" height="600">
           <div class="gallery-overlay">
             <div>TWZP #29</div>
             <small>點擊放大</small>
@@ -3064,7 +3136,7 @@
               <span id="twzp_029-count" class="count-number">---</span> 次下載
             </div>
           </div>
-          <a href="TWZP 1155 加料/P/twzp1155_img_029.jpg" download="tingyuun_twzp_029.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_029'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_029.jpg', file_type: 'twzp_photo', item_id: 'twzp_029'});">📥 下載</a>
+          <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_029.jpg" download="tingyuun_twzp_029.jpg" class="download-btn item-download-btn" onclick="event.stopPropagation(); trackDownload('twzp_029'); gtag('event', 'file_download', {file_name: 'tingyuun_twzp_029.jpg', file_type: 'twzp_photo', item_id: 'twzp_029'});">📥 下載</a>
         </div>
       </div>
     </div>
@@ -3076,7 +3148,7 @@
       <div class="video-grid">
         <div class="video-item">
           <video controls preload="metadata">
-            <source src="TWZP 1155 加料/V/twzp1155_vid_001.mp4" type="video/mp4">
+            <source src="TWZP%201155%20%E5%8A%A0%E6%96%99/V/twzp1155_vid_001.mp4" type="video/mp4">
           </video>
           <div class="video-info">
             <div class="video-title">影片 #1</div>
@@ -3084,13 +3156,13 @@
             <div class="download-stats">
               <span id="video_001-count" class="count-number">---</span> 次下載
             </div>
-            <a href="TWZP 1155 加料/V/twzp1155_vid_001.mp4" download="tingyuun_video_001.mp4" class="download-btn" onclick="event.stopPropagation(); trackDownload('video_001'); gtag('event', 'file_download', {file_name: 'tingyuun_video_001.mp4', file_type: 'video', item_id: 'video_001', file_size: '3.0MB', duration: '10s'});">📥 下載原片</a>
+            <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/V/twzp1155_vid_001.mp4" download="tingyuun_video_001.mp4" class="download-btn" onclick="event.stopPropagation(); trackDownload('video_001'); gtag('event', 'file_download', {file_name: 'tingyuun_video_001.mp4', file_type: 'video', item_id: 'video_001', file_size: '3.0MB', duration: '10s'});">📥 下載原片</a>
           </div>
         </div>
         
         <div class="video-item">
           <video controls preload="metadata">
-            <source src="TWZP 1155 加料/V/twzp1155_vid_002.mp4" type="video/mp4">
+            <source src="TWZP%201155%20%E5%8A%A0%E6%96%99/V/twzp1155_vid_002.mp4" type="video/mp4">
           </video>
           <div class="video-info">
             <div class="video-title">影片 #2</div>
@@ -3098,13 +3170,13 @@
             <div class="download-stats">
               <span id="video_002-count" class="count-number">---</span> 次下載
             </div>
-            <a href="TWZP 1155 加料/V/twzp1155_vid_002.mp4" download="tingyuun_video_002.mp4" class="download-btn" onclick="event.stopPropagation(); trackDownload('video_002'); gtag('event', 'file_download', {file_name: 'tingyuun_video_002.mp4', file_type: 'video', item_id: 'video_002', file_size: '2.8MB', duration: '9s'});">📥 下載原片</a>
+            <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/V/twzp1155_vid_002.mp4" download="tingyuun_video_002.mp4" class="download-btn" onclick="event.stopPropagation(); trackDownload('video_002'); gtag('event', 'file_download', {file_name: 'tingyuun_video_002.mp4', file_type: 'video', item_id: 'video_002', file_size: '2.8MB', duration: '9s'});">📥 下載原片</a>
           </div>
         </div>
         
         <div class="video-item">
           <video controls preload="metadata">
-            <source src="TWZP 1155 加料/V/twzp1155_vid_003.mp4" type="video/mp4">
+            <source src="TWZP%201155%20%E5%8A%A0%E6%96%99/V/twzp1155_vid_003.mp4" type="video/mp4">
           </video>
           <div class="video-info">
             <div class="video-title">影片 #3</div>
@@ -3112,13 +3184,13 @@
             <div class="download-stats">
               <span id="video_003-count" class="count-number">---</span> 次下載
             </div>
-            <a href="TWZP 1155 加料/V/twzp1155_vid_003.mp4" download="tingyuun_video_003.mp4" class="download-btn" onclick="event.stopPropagation(); trackDownload('video_003'); gtag('event', 'file_download', {file_name: 'tingyuun_video_003.mp4', file_type: 'video', item_id: 'video_003', file_size: '3.3MB', duration: '11s'});">📥 下載原片</a>
+            <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/V/twzp1155_vid_003.mp4" download="tingyuun_video_003.mp4" class="download-btn" onclick="event.stopPropagation(); trackDownload('video_003'); gtag('event', 'file_download', {file_name: 'tingyuun_video_003.mp4', file_type: 'video', item_id: 'video_003', file_size: '3.3MB', duration: '11s'});">📥 下載原片</a>
           </div>
         </div>
         
         <div class="video-item">
           <video controls preload="metadata">
-            <source src="TWZP 1155 加料/V/twzp1155_vid_004.mp4" type="video/mp4">
+            <source src="TWZP%201155%20%E5%8A%A0%E6%96%99/V/twzp1155_vid_004.mp4" type="video/mp4">
           </video>
           <div class="video-info">
             <div class="video-title">影片 #4 ⭐</div>
@@ -3126,13 +3198,13 @@
             <div class="download-stats">
               <span id="video_004-count" class="count-number">---</span> 次下載
             </div>
-            <a href="TWZP 1155 加料/V/twzp1155_vid_004.mp4" download="tingyuun_video_004.mp4" class="download-btn" onclick="event.stopPropagation(); trackDownload('video_004'); gtag('event', 'file_download', {file_name: 'tingyuun_video_004.mp4', file_type: 'video', item_id: 'video_004', file_size: '35MB', duration: '1m10s', is_featured: true});">📥 下載原片</a>
+            <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/V/twzp1155_vid_004.mp4" download="tingyuun_video_004.mp4" class="download-btn" onclick="event.stopPropagation(); trackDownload('video_004'); gtag('event', 'file_download', {file_name: 'tingyuun_video_004.mp4', file_type: 'video', item_id: 'video_004', file_size: '35MB', duration: '1m10s', is_featured: true});">📥 下載原片</a>
           </div>
         </div>
         
         <div class="video-item">
           <video controls preload="metadata">
-            <source src="TWZP 1155 加料/V/twzp1155_vid_005.mp4" type="video/mp4">
+            <source src="TWZP%201155%20%E5%8A%A0%E6%96%99/V/twzp1155_vid_005.mp4" type="video/mp4">
           </video>
           <div class="video-info">
             <div class="video-title">影片 #5</div>
@@ -3140,13 +3212,13 @@
             <div class="download-stats">
               <span id="video_005-count" class="count-number">---</span> 次下載
             </div>
-            <a href="TWZP 1155 加料/V/twzp1155_vid_005.mp4" download="tingyuun_video_005.mp4" class="download-btn" onclick="event.stopPropagation(); trackDownload('video_005'); gtag('event', 'file_download', {file_name: 'tingyuun_video_005.mp4', file_type: 'video', item_id: 'video_005', file_size: '1.3MB', duration: '4s'});">📥 下載原片</a>
+            <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/V/twzp1155_vid_005.mp4" download="tingyuun_video_005.mp4" class="download-btn" onclick="event.stopPropagation(); trackDownload('video_005'); gtag('event', 'file_download', {file_name: 'tingyuun_video_005.mp4', file_type: 'video', item_id: 'video_005', file_size: '1.3MB', duration: '4s'});">📥 下載原片</a>
           </div>
         </div>
         
         <div class="video-item">
           <video controls preload="metadata">
-            <source src="TWZP 1155 加料/V/twzp1155_vid_006.mp4" type="video/mp4">
+            <source src="TWZP%201155%20%E5%8A%A0%E6%96%99/V/twzp1155_vid_006.mp4" type="video/mp4">
           </video>
           <div class="video-info">
             <div class="video-title">影片 #6</div>
@@ -3154,13 +3226,13 @@
             <div class="download-stats">
               <span id="video_006-count" class="count-number">---</span> 次下載
             </div>
-            <a href="TWZP 1155 加料/V/twzp1155_vid_006.mp4" download="tingyuun_video_006.mp4" class="download-btn" onclick="event.stopPropagation(); trackDownload('video_006'); gtag('event', 'file_download', {file_name: 'tingyuun_video_006.mp4', file_type: 'video', item_id: 'video_006', file_size: '4.6MB', duration: '15s'});">📥 下載原片</a>
+            <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/V/twzp1155_vid_006.mp4" download="tingyuun_video_006.mp4" class="download-btn" onclick="event.stopPropagation(); trackDownload('video_006'); gtag('event', 'file_download', {file_name: 'tingyuun_video_006.mp4', file_type: 'video', item_id: 'video_006', file_size: '4.6MB', duration: '15s'});">📥 下載原片</a>
           </div>
         </div>
         
         <div class="video-item">
           <video controls preload="metadata">
-            <source src="TWZP 1155 加料/V/twzp1155_vid_007.mp4" type="video/mp4">
+            <source src="TWZP%201155%20%E5%8A%A0%E6%96%99/V/twzp1155_vid_007.mp4" type="video/mp4">
           </video>
           <div class="video-info">
             <div class="video-title">影片 #7</div>
@@ -3168,13 +3240,13 @@
             <div class="download-stats">
               <span id="video_007-count" class="count-number">---</span> 次下載
             </div>
-            <a href="TWZP 1155 加料/V/twzp1155_vid_007.mp4" download="tingyuun_video_007.mp4" class="download-btn" onclick="event.stopPropagation(); trackDownload('video_007'); gtag('event', 'file_download', {file_name: 'tingyuun_video_007.mp4', file_type: 'video', item_id: 'video_007', file_size: '12MB', duration: '40s'});">📥 下載原片</a>
+            <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/V/twzp1155_vid_007.mp4" download="tingyuun_video_007.mp4" class="download-btn" onclick="event.stopPropagation(); trackDownload('video_007'); gtag('event', 'file_download', {file_name: 'tingyuun_video_007.mp4', file_type: 'video', item_id: 'video_007', file_size: '12MB', duration: '40s'});">📥 下載原片</a>
           </div>
         </div>
         
         <div class="video-item">
           <video controls preload="metadata">
-            <source src="TWZP 1155 加料/V/twzp1155_vid_008.mp4" type="video/mp4">
+            <source src="TWZP%201155%20%E5%8A%A0%E6%96%99/V/twzp1155_vid_008.mp4" type="video/mp4">
           </video>
           <div class="video-info">
             <div class="video-title">影片 #8</div>
@@ -3182,7 +3254,7 @@
             <div class="download-stats">
               <span id="video_008-count" class="count-number">---</span> 次下載
             </div>
-            <a href="TWZP 1155 加料/V/twzp1155_vid_008.mp4" download="tingyuun_video_008.mp4" class="download-btn" onclick="event.stopPropagation(); trackDownload('video_008'); gtag('event', 'file_download', {file_name: 'tingyuun_video_008.mp4', file_type: 'video', item_id: 'video_008', file_size: '6.7MB', duration: '22s'});">📥 下載原片</a>
+            <a href="TWZP%201155%20%E5%8A%A0%E6%96%99/V/twzp1155_vid_008.mp4" download="tingyuun_video_008.mp4" class="download-btn" onclick="event.stopPropagation(); trackDownload('video_008'); gtag('event', 'file_download', {file_name: 'tingyuun_video_008.mp4', file_type: 'video', item_id: 'video_008', file_size: '6.7MB', duration: '22s'});">📥 下載原片</a>
           </div>
         </div>
       </div>
@@ -3410,7 +3482,7 @@
         for (let i = 1; i <= 29; i++) {
           const num = String(i).padStart(3, '0');
           files.push({
-            url: `TWZP 1155 加料/P/twzp1155_img_${num}.jpg`,
+            url: `TWZP%201155%20%E5%8A%A0%E6%96%99/P/twzp1155_img_${num}.jpg`,
             name: `photos/TWZP/tingyuun_twzp_${num}.jpg`
           });
         }
@@ -3419,7 +3491,7 @@
         for (let i = 1; i <= 8; i++) {
           const num = String(i).padStart(3, '0');
           files.push({
-            url: `TWZP 1155 加料/V/twzp1155_vid_${num}.mp4`,
+            url: `TWZP%201155%20%E5%8A%A0%E6%96%99/V/twzp1155_vid_${num}.mp4`,
             name: `videos/tingyuun_video_${num}.mp4`
           });
         }
